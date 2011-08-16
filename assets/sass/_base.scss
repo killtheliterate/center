@@ -1,0 +1,19 @@
+@import "compass/css3";
+@import "compass/typography";
+
+//  Colors
+//--------------------------------------------------
+
+$blue-dark:       #011b36;
+$blue:            #003366;
+$blue-light:      #006699;
+
+//  Typography
+//--------------------------------------------------
+
+@mixin sans-serif {
+  font-family: "Droid Sans", Calibri, "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+}
+@mixin serif {
+  font-family: "Droid Serif", Cambria, Georgia, "Times New Roman", Times, serif;
+}

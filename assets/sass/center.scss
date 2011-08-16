@@ -1,0 +1,511 @@
+@import "base";
+
+//  Typography
+//----------------------------------------------------------------------------------------------------
+
+html {
+  color: #333;
+  font-size:100%; /* Use 16px as per http://www.informationarchitects.jp/en/100e2r/ and http://www.wilsonminer.com/posts/2008/oct/20/relative-readability/ */
+  @include sans-serif;
+  line-height:1.5em;
+}
+
+body {
+  @include sans-serif;
+}
+
+//  Headers
+
+h1{
+	font-size:32px;
+	font-size:2rem; /* 32px */
+	margin-bottom: 0.75em;	/* 24px */
+	line-height: 1.5;		/* 48px */
+}
+h2{
+	font-size:24px;
+	font-size:1.5rem;		/* 24px */
+	margin-bottom:1em;		/* 24px */
+	line-height:1;			/* 24px */
+}
+h3{
+	font-size:20px;
+	font-size:1.25rem;		/* 20px */
+	margin-bottom:1.2em;	/* 24px */
+	line-height:1.2;		/* 24px */
+}
+h4{
+	font-size:18px;
+	font-size:1.125rem;		/* 18px */
+	margin-bottom:1.333em;	/* 24px */
+	line-height:1.333;		/* 24px */
+}
+h5{
+	font-weight:bold;
+}
+h5,
+h6{
+	font-size:16px;
+	font-size:1rem;			/* 16px */
+	margin-bottom:1.5em;	/* 24px */
+	line-height:1.5;		/* 24px */
+}
+
+//  Paragraphs
+
+p,
+address{
+  line-height: 1.5em;
+	margin-bottom:1.5em;
+}
+
+//  Links
+
+a{
+  @include link-colors($blue, $blue-dark);
+  @include transition(color, .15s);
+	text-decoration:none;
+}
+a:visited{
+	opacity:0.8; /* A bit basic, but it’s a bare minumum... */
+}
+a:hover{
+	text-decoration:underline;
+}
+
+//  Lists
+
+ul,
+ol{
+	margin:0 0 1.5em 20px;
+}
+ul ul,
+ol ol,
+ul ol,
+ol ul{
+	/* Let’s take care of lists in lists */
+	margin:0 0 0 20px;
+}
+li {
+  line-height: 1.5em;
+}
+ul {
+  list-style-type: disc;
+  ul {
+    list-style-type: circle;
+  }
+}
+ol {
+  list-style-type: decimal;
+}
+dl{
+	margin-bottom:1.5em;
+}
+dt{
+	font-weight:bold;
+}
+dt:after{
+	content:":";
+}
+dt::after{
+	content:":";
+}
+dd{
+	margin-left: 20px;
+}
+
+//  Quotes
+
+
+blockquote{
+	//text-indent:-0.4em; /* Hang that punctuation */
+	line-height: 1.5em;
+}
+blockquote b,
+blockquote .source{
+	/* Mark the source up with either a <b> or another element of your choice with a class of source. */
+	display:block;
+	text-indent:0;
+}
+
+//  General
+
+q,
+i,
+em,
+cite{
+  font-style:italic;
+  font-weight:inherit;
+}
+b,
+strong{
+  font-weight:bold;
+  font-style:inherit;
+}
+mark{
+  background:#ffc;
+}
+s,
+del{
+  text-decoration:line-through;
+}
+small{
+  font-size:0.75em;
+  line-height:1;
+}
+
+//  Code
+
+pre,
+code{
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 1em;
+}
+pre{
+  overflow:auto;
+  margin-bottom:1.5em;
+  line-height: 20px; /* Having to define explicit pixel values :( */
+}
+code{
+  line-height:1;
+}
+
+//  Images
+
+img{
+  max-width:100%;
+  height:auto;
+  /* Give it some text styles to offset alt text */
+  font-style:italic;
+  color:#c00;
+}
+img.left	{ margin:0 20px 0 0; }
+img.right	{ margin:0 0 0 20px; }
+
+/*--- FLASH/VIDEO ---*/
+object,
+embed,
+video{
+  max-width:100%;
+  height:auto;
+}
+
+//  Forms
+
+fieldset{
+  padding:10px;
+  border:1px solid #ccc;
+  margin-bottom:1.5em;
+}
+label{
+  display:block;
+  cursor:pointer;
+  line-height: 1.5;
+}
+input,
+textarea{
+  font-family:inherit;
+	font-size:1em;
+	line-height:1.5;
+}
+
+[placeholder]{
+  cursor:pointer;
+}
+[placeholder]:active,
+[placeholder]:focus{
+  cursor:text;
+}
+.check-list{
+  width:100%;
+  overflow:hidden;
+  list-style:none;
+  margin:0 0 1.5em 0;
+}
+.check-list li{
+  width:25%;
+  float:left;
+}
+.check-label{
+  display:inline;
+}
+.check-label:after{
+  content:normal;
+}
+.check-label::after{
+  content:normal;
+}
+.button{
+  cursor:pointer;
+}
+fieldset > :last-child{
+  /* Remove the margin from the last element in the fieldset--this makes our padding more consistent. */
+  margin:0;
+}
+.form-item {
+  margin: 0 0 1em 0;
+}
+
+//  Tables
+
+table{
+  margin-bottom:1.5em;
+  width:100%;
+  max-width:100%;
+}
+thead tr:last-of-type th{
+  /* Thicker border on the table-headers of the last row in the table head */
+  border-bottom-width:2px;
+}
+tbody th{
+  /* Thicker right border on table-headers in the table body */
+  border-right-width:2px;
+}
+th:empty{
+  /* Hide the borders on any empty table-headers */
+  border:none;
+}
+th,td{
+  vertical-align:top;
+  padding:0.75em;
+  border:1px solid #ccc;
+}
+th{
+  font-weight:bold;
+  text-align:center
+}
+table [colspan]{
+  /* This looks lovely, trust me... */
+  text-align:center;
+}
+table [rowspan]{
+  /* ...as does this. */
+  vertical-align:middle;
+}
+/*
+Assuming IE has an 'implied' colspan of one on cells without an explicit colspan attribute, fix/undo it.
+See http://jsfiddle.net/csswizardry/UJJay/
+*/
+[colspan="1"]{
+  text-align:left;
+}
+[rowspan="1"]{
+  vertical-align:top;
+}
+tbody tr:nth-of-type(odd){
+  background:rgba(0,0,0,0.05);
+}
+tfoot{
+  text-align:center;
+}
+tfoot td{
+  border-top-width:2px;
+}
+
+//  Messages
+
+.message{
+	font-weight:normal;
+	display:block;
+	padding:10px 10px 10px 36px;
+	border:1px solid #ccc;
+	margin:0 0 1.5em 0;
+	
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	-moz-box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;
+	-webkit-box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;
+	box-shadow:0 1px 0 rgba(255,255,255,0.5) inset;
+}
+/* With multiple errors it’s nice to group them. */
+ul.message{
+	list-style:decimal outside; /* It’s also handy to number them. However, they might not necessarily be in a particular order, so we spoof it by putting numbers on an unordered list */
+	padding:10px 10px 10px 56px;
+}
+.error{
+	border-color:#fb5766;
+	background:url(../img/css/icons/error.png) 10px center no-repeat #fab;
+}
+.success{
+	border-color:#83ba77;
+	background:url(../img/css/icons/success.png) 10px center no-repeat #d1feba;
+}
+.info{
+	border-color:#85a5be;
+	background:url(../img/css/icons/info.png) 10px center no-repeat #c4dbec;
+}
+.warning{
+	border-color:#d8d566;
+	background:url(../img/css/icons/warning.png) 10px center no-repeat #fef8c4;
+}
+
+//  Misc
+
+hr{
+	margin:0 0 1.5em 0;
+}
+
+//  Main
+//----------------------------------------------------------------------------------------------------
+
+html {
+	font-size: 13px;
+  font-size: .8125rem;  // 13px
+  line-height: 1.53846154;
+}
+body{
+	-webkit-text-size-adjust:none;
+}
+
+//  Drupal Overrides
+//----------------------------------------------------------------------------------------------------
+
+//  Toolbar
+
+#toolbar {
+  @include box-shadow(none);
+}
+
+//  Tabs
+
+#tabs {
+  ul.primary {
+    border-bottom: 1px solid #e5e5e5;
+    float: left;
+    list-style-type: none;
+    margin-left: 0;
+    width: 100%;
+    li {
+      float: left;
+      line-height: 30px;
+      margin-right: -1px;
+      a {
+        @include link-colors(#666, #000);
+        @include transition(all, .15s);
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-top: 1px solid #ececec;
+        border-bottom: none;
+        float: left;
+        padding: 0 15px;
+        &:hover {
+          background-color: #f2f2f2;
+        }
+      }
+      &.active {
+        a {
+          @include link-colors(#000, #333);
+          background-color: #fff;
+          margin-bottom: -1px;
+          padding-bottom: 1px;
+        }
+      }
+    }
+  }
+}
+
+//  Layout
+//----------------------------------------------------------------------------------------------------
+
+//  General
+//--------------------------------------------------
+
+.clearfix {
+  @include legacy-pie-clearfix;
+}
+
+.container {
+  @include legacy-pie-clearfix;
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+#main-content {
+  clear: left;
+}
+#content {
+  clear: left;
+  margin-bottom: 20px;
+}
+#sidebar-first {
+  clear: right;
+  margin-bottom: 20px;
+}
+#sidebar-second {
+  clear: right;
+  margin-bottom: 20px;
+}
+
+.one-sidebar {
+  #content {
+    float: left;
+    width: 66.6666666666667%;  // 640px / 960px
+  }
+  #sidebar-first {
+    float: right;
+    width: 29.1666666666667%; // 280px / 960px
+  }
+}
+.two-sidebars {
+  #main-content {
+    float: left;
+    width: 77.0833333333333%; // 740px / 960px
+  }
+  #content {
+    float: left;
+    width: 70.2702702702703%; // 520px / 740px
+  }
+  #sidebar-first {
+    float: right;
+    width: 29.7297297297297%; // 220px / 740px
+  }
+  #sidebar-second {
+    float: right;
+    width: 16.6666666666667%; // 160px / 940px
+  }
+}
+
+//  Print
+//--------------------------------------------------
+
+@media print {
+  .container {
+    width: 100%;
+  }
+}
+
+//  Narrow
+//--------------------------------------------------
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+
+//  Mobile
+//--------------------------------------------------
+
+@media screen and (max-width: 480px) {
+  .one-sidebar {
+    #content,
+    #sidebar-first {
+      clear: both;
+      float: left;
+      width: 100%;
+    }
+  }
+  .two-sidebars {
+    #main-content,
+    #content,
+    #sidebar-first,
+    #sidebar-second {
+      clear: both;
+      float: left;
+      width: 100%;
+    }
+  }
+}
