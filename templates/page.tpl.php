@@ -23,7 +23,7 @@
       <? } // end header ?>
     </div>
   </div>
-  
+
   <?php if ($page['navigation'] || $main_menu) { ?>
     <div id="navigation" class="clearfix">
       <div class="container">
@@ -50,23 +50,31 @@
 
   <div id="main">
     <div class="container">
-      
+
       <?php if ($messages) { ?>
         <div id="messages">
             <?php print $messages; ?>
         </div>
       <? } // end messages ?>
-      
+
+      <?php if ($page['above_content']) { ?>
+        <div id="above-content">
+          <div class="container">
+            <?php print render($page['above_content']); ?>
+          </div>
+        </div>
+      <? } // end Above Content ?>
+
       <div id="main-content">
-        
+
         <?php if (render($tabs)) { ?>
           <div id="tabs">
             <?php print render($tabs); ?>
           </div>
         <? } // end tabs ?>
-        
+
         <div id="content">
-        
+
           <?php if ($page['highlighted']) { ?>
             <div id="highlighted">
               <div class="container">
@@ -74,58 +82,57 @@
               </div>
             </div>
           <? } // end highlighted ?>
-          
-          <?php if ($page['featured']) { ?>
-            <div id="featured">
-              <div class="container">
-                <?php print render($page['featured']); ?>
-              </div>
-            </div>
-          <? } // end featured ?>
-        
+
           <?php if (!$is_front && strlen($title) > 0) { ?>
-            <h1><?php print $title; ?></h1> 
+            <h1><?php print $title; ?></h1>
           <? } ?>
-          
+
           <?php if ($page['help']) { ?>
             <div id="help">
               <?php print render($page['help']); ?>
             </div>
-          <? } // end tabs ?>
-          
+          <? } // end help ?>
+
           <?php print render($page['content']); ?>
-          
+
         </div>
-      
+
         <?php if ($page['sidebar_first']) { ?>
           <div id="sidebar-first" class="aside">
             <?php print render($page['sidebar_first']); ?>
           </div>
         <? } // end sidebar_first ?>
-        
+
+        <?php if ($page['sidebar_second']) { ?>
+          <div id="sidebar-second" class="aside">
+            <?php print render($page['sidebar_second']); ?>
+          </div>
+        <? } // end sidebar_second ?>
       </div>
-      
-      <?php if ($page['sidebar_second']) { ?>
-        <div id="sidebar-second" class="aside">
-          <?php print render($page['sidebar_second']); ?>
+
+      <?php if ($page['below_content']) { ?>
+        <div id="below-content">
+          <div class="container">
+            <?php print render($page['below_content']); ?>
+          </div>
         </div>
-      <? } // end sidebar_second ?>
-      
+      <? } // end Below Content ?>
+
     </div>
   </div>
-  
+
   <div id="footer">
     <div class="container">
       <?php print render($page['footer']); ?>
     </div>
   </div>
-  
+
   <?php if ($page['admin_footer']) { ?>
     <div id="admin-footer">
       <div class="container">
         <?php print render($page['admin_footer']); ?>
       </div>
-    </div>    
+    </div>
   <? } // end admin_footer ?>
-  
+
 </div>

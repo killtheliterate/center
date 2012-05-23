@@ -10,16 +10,18 @@ core = 7.x
 regions[page_top]           = Page Top
 regions[page_bottom]        = Page Bottom
 
-regions[header]             = Header
 regions[utility]            = Utility
+regions[header]             = Header
 regions[navigation]         = Navigation
 
 regions[help]               = Help
 regions[highlighted]        = Highlighted
-regions[featured]           = Featured
+
+regions[above_content]      = Above Content
 regions[content]            = Content
 regions[sidebar_first]      = Sidebar First
 regions[sidebar_second]     = Sidebar Second
+regions[sidebar_first]      = Below Content
 
 regions[footer]             = Footer
 regions[admin_footer]       = Admin Footer
@@ -32,10 +34,11 @@ stylesheets[all][] = css/override/kill/system.messages.css
 stylesheets[all][] = css/override/kill/system.menus.css
 stylesheets[all][] = css/override/kill/user.css
 stylesheets[all][] = css/override/kill/views.css
-stylesheets[all][] = css/reset.css
+stylesheets[all][] = css/override/keep/print.css
 stylesheets[all][] = css/override/keep/system.base.css
 stylesheets[all][] = css/override/keep/system.theme.css
 stylesheets[all][] = css/override/keep/search.css
-stylesheets[all][] = css/center.css
+stylesheets[all][] = css/screen.css
 
 ;-------------- J S -------------
+;scripts[] = js/main.js

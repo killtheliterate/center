@@ -1,0 +1,24 @@
+#messages {
+  @include legacy-pie-clearfix;
+  background-color: $white;
+  border-bottom: solid 1px $gray-lightest;
+  font-weight: 600;
+  padding: $base-line-height $width-gutter 0;
+}
+
+.messages {
+	@include border-radius(4px);
+	margin-bottom: $base-line-height;
+	padding: 12px 24px;
+}
+
+.error {
+  background-color: $red;
+  color: $white;
+
+  a {
+  	color: $white;
+  	font-weight: bold;
+  }
+}
+
