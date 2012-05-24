@@ -97,6 +97,7 @@ function center_preprocess_field(&$vars) {
   $content_classes[] = 'field-items';
   $item_classes[] = 'field-item';
 
+  /* Uncomment the line below to see variables you can use to target a field */
   #print '<strong>Field:</strong> ' . $field . ' | <strong>Bundle:</strong> ' . $bundle  . ' | <strong>Mode:</strong> ' . $mode .'<br/>';
 
   /* Example: Using an alternative theme function */
@@ -130,6 +131,7 @@ function center_preprocess_block(&$vars) {
   $title_classes[] = 'block-title';
   $content_classes[] = 'block-content';
 
+  /* Uncomment the line below to see variables you can use to target a field */
   #print $block_id . '<br/>';
 
   // /* Add classes based on the block delta. */
