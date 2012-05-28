@@ -20,6 +20,18 @@ function center_js_alter(&$javascript) {
 }
 
 /**
+ * Menus
+ */
+
+/**
+ * Overrides theme_menu_tree() for the main menu.
+ */
+
+function center_menu_tree__main_menu($variables) {
+  return '<ul class="nav navbar">' . $variables['tree'] . '</ul>';
+}
+
+/**
  * Fields
  */
 
@@ -101,9 +113,9 @@ function center_preprocess_field(&$vars) {
   #print '<strong>Field:</strong> ' . $field . ' | <strong>Bundle:</strong> ' . $bundle  . ' | <strong>Mode:</strong> ' . $mode .'<br/>';
 
   /* Example: Using an alternative theme function */
-  if($field == 'field_tags') {
-    $vars['theme_hook_suggestions'][] = 'field__custom_separated';
-  }
+  // if($field == 'field_tags') {
+  //   $vars['theme_hook_suggestions'][] = 'field__custom_separated';
+  // }
 
   // Apply odd or even classes along with our custom classes to each item */
   foreach ($vars['items'] as $delta => $item) {

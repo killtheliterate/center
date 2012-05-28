@@ -24,29 +24,11 @@
     </div>
   </div>
 
-  <?php if ($page['navigation'] || $main_menu) { ?>
+  <?php if ($page['navigation']) { ?>
     <div id="navigation" class="clearfix">
-      <div class="container">
-        <?php if ($main_menu): ?>
-          <div id="main-menu" class="navigation">
-            <?php print theme('links__system_main_menu', array(
-              'links' => $main_menu,
-              'attributes' => array(
-                'id' => 'main-menu-links',
-                'class' => array('links', 'clearfix'),
-              ),
-              'heading' => array(
-                'text' => t('Main menu'),
-                'level' => 'h2',
-                'class' => array('element-invisible'),
-              ),
-            )); ?>
-          </div> <!-- /#main-menu -->
-        <?php endif; ?>
-        <?php print render($page['navigation']); ?>
-      </div>
+      <?php print render($page['navigation']); ?>
     </div>
-  <? } // end navigation & main_menu ?>
+  <? } // end navigation?>
 
   <div id="main">
     <div class="container">
