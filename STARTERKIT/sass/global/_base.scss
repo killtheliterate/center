@@ -1,0 +1,3 @@
+html > body {
+  @include adjust-leading-to(3, $base-font-size);
+}

@@ -1,0 +1,50 @@
+//
+// @file
+// Major layout styles.
+
+// Gutters
+.gutters {
+  padding: 0 $w-gutter;
+}
+
+.gutters-half {
+  padding: 0 $w-gutter / 2;
+}
+
+// Vertical spacing
+.l-space-leading {
+  margin-top: rhythm(3);
+}
+
+.l-space-trailing {
+  margin-bottom: rhythm(3);
+}
+
+// Set the page width.
+.page-width {
+    margin: 0 auto;
+    width: $w-full;
+}
+
+.no-sidebars {
+  #content {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.one-sidebar {
+  #content {
+    float: right;
+    width: $w-content;
+  }
+
+  #sidebar-first {
+    float: left;
+    width: $w-sidebar-first;
+  }
+}
+
+#main-content {
+  padding-bottom: rhythm(3);
+}

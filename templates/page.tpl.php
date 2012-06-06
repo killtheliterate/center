@@ -1,7 +1,7 @@
 <div id="page">
 
   <div id="header">
-    <div class="container">
+    <div class="page-width">
       <h1 id="logo">
         <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -31,7 +31,7 @@
   <? } // end navigation?>
 
   <div id="main">
-    <div class="container">
+    <div class="page-width">
 
       <?php if ($messages) { ?>
         <div id="messages">
@@ -47,7 +47,7 @@
         </div>
       <? } // end Above Content ?>
 
-      <div id="main-content">
+      <div id="main-content" class="clearfix">
 
         <?php if (render($tabs)) { ?>
           <div id="tabs">
@@ -104,14 +104,14 @@
   </div>
 
   <div id="footer">
-    <div class="container">
+    <div class="page-width">
       <?php print render($page['footer']); ?>
     </div>
   </div>
 
   <?php if ($page['admin_footer']) { ?>
     <div id="admin-footer">
-      <div class="container">
+      <div class="page-width">
         <?php print render($page['admin_footer']); ?>
       </div>
     </div>

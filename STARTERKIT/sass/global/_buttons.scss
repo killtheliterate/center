@@ -1,0 +1,15 @@
+.button {
+
+}
+
+input.form-submit {
+  @extend .button;
+}
+
+.form-actions {
+  margin: 0;
+  padding: 0 0 1em 0;
+  input.form-submit {
+    margin-right: $width-gutter;
+  }
+}

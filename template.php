@@ -20,19 +20,62 @@ function center_js_alter(&$javascript) {
 }
 
 /**
- * Menus
+ * MENUS
  */
 
 /**
- * Overrides theme_menu_tree() for the main menu.
+ * Overrides theme_menu_tree().
  */
 
-function center_menu_tree__main_menu($variables) {
-  return '<ul class="nav navbar">' . $variables['tree'] . '</ul>';
+function center_menu_tree($variables) {
+  return '<ul class="nav">' . $variables['tree'] . '</ul>';
 }
 
 /**
- * Fields
+ * Custom implementation of theme_menu_link()
+ * This adds a span for including icons before a menu link.
+ */
+
+function center_menu_link__icon(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  /* Prevent the <span> tag from being escaped */
+  $element['#localized_options']['html'] = TRUE;
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  $icon = '<span' . drupal_attributes($element['#icon_attributes']) . '></span>';
+  $output = l($icon . $element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+/**
+ * Overrides theme_menu_local_tasks().
+ */
+
+function center_menu_local_tasks(&$variables) {
+  $output = '';
+
+  if (!empty($variables['primary'])) {
+    $variables['primary']['#prefix'] = '<h2 class="element-invisible">' . t('Primary tabs') . '</h2>';
+    $variables['primary']['#prefix'] .= '<ul class="nav nav-tabs">';
+    $variables['primary']['#suffix'] = '</ul>';
+    $output .= drupal_render($variables['primary']);
+  }
+  if (!empty($variables['secondary'])) {
+    $variables['secondary']['#prefix'] = '<h2 class="element-invisible">' . t('Secondary tabs') . '</h2>';
+    $variables['secondary']['#prefix'] .= '<ul class="nav nav-pills">';
+    $variables['secondary']['#suffix'] = '</ul>';
+    $output .= drupal_render($variables['secondary']);
+  }
+
+  return $output;
+}
+
+/**
+ * FIELDS
  */
 
 /**
@@ -62,7 +105,9 @@ function center_field($variables) {
 }
 
 /**
- * Theme function for comma separated field items
+ * Custom implementation of theme_field()
+ * Turns multivalued fields into a comma separated list.
+ * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_separated';
  */
 
 function center_field__custom_separated($variables) {
@@ -90,69 +135,9 @@ function center_field__custom_separated($variables) {
 }
 
 /**
- * Implements hook_preprocess_field()
- */
-
-function center_preprocess_field(&$vars) {
-  /* Set shortcut variables. Hooray for less typing! */
-  $field = $vars['element']['#field_name'];
-  $bundle = $vars['element']['#bundle'];
-  $mode = $vars['element']['#view_mode'];
-  $classes = &$vars['classes_array'];
-  $title_classes = &$vars['title_attributes_array']['class'];
-  $content_classes = &$vars['content_attributes_array']['class'];
-  $item_classes = array();
-
-  /* Global field styles */
-  $classes[] = 'field-wrapper';
-  $title_classes[] = 'field-label';
-  $content_classes[] = 'field-items';
-  $item_classes[] = 'field-item';
-
-  /* Uncomment the line below to see variables you can use to target a field */
-  #print '<strong>Field:</strong> ' . $field . ' | <strong>Bundle:</strong> ' . $bundle  . ' | <strong>Mode:</strong> ' . $mode .'<br/>';
-
-  /* Example: Using an alternative theme function */
-  // if($field == 'field_tags') {
-  //   $vars['theme_hook_suggestions'][] = 'field__custom_separated';
-  // }
-
-  // Apply odd or even classes along with our custom classes to each item */
-  foreach ($vars['items'] as $delta => $item) {
-    $item_classes[] = $delta % 2 ? 'odd' : 'even';
-    $vars['item_attributes_array'][$delta]['class'] = $item_classes;
-  }
-}
-
-/**
- * Blocks
+ * NODES
  */
 
 /**
- * Implements hook_preprocess_block()
+ * BLOCKS
  */
-
-function center_preprocess_block(&$vars) {
-  /* Set shortcut variables. Hooray for less typing! */
-  $block_id = $vars['block']->module . '-' . $vars['block']->delta;
-  $classes = &$vars['classes_array'];
-  $title_classes = &$vars['title_attributes_array']['class'];
-  $content_classes = &$vars['content_attributes_array']['class'];
-
-  /* Add global classes to all blocks */
-  $title_classes[] = 'block-title';
-  $content_classes[] = 'block-content';
-
-  /* Uncomment the line below to see variables you can use to target a field */
-  #print $block_id . '<br/>';
-
-  // /* Add classes based on the block delta. */
-  // switch ($block_id) {
-  //   /* System Navigation block */
-  //   case 'system-navigation':
-  //     $classes[] = 'block-rounded';
-  //     $title_classes[] = 'block-fancy-title';
-  //     $content_classes[] = 'block-fancy-content';
-  //     break;
-  // }
-}
