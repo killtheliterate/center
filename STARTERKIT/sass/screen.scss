@@ -6,29 +6,45 @@
 @import "compass/css3";
 @import "compass/typography";
 
+// Frameworks
+@import "breakpoint";
+@import "zen";
+
 //  Partials - Variables, functions and mixins specific to SASS
-//  @import "icon/*.png";  // Compass sprite support
+@import "icon/*.png";     // Compass sprite support
 @import "partials/functions";
 @import "partials/mixins";
+@import "partials/extends";
 
 //  Global - Generalized global styles
 @import "global/normalize";
 @import "global/base";
-@import "global/layout";
-@import "global/forms";
 @import "global/tables";
-@import "global/icons";
-@import "global/links";
 @import "global/buttons";
+@import "global/forms";
 @import "global/lists";
+@import "global/images";
+@import "global/headings";
 @import "global/fields";
+@import "global/navigation";
+
+//  Libraries - Modified 3rd party CSS
+@import "libraries/flexslider";
+
+//  Layout - Styles specific to layout
+@import "layout/pages";
+@import "layout/regions";
+@import "layout/modes";
 
 //  Components - Styles specific individual components
 @import "components/messages";
-@import "components/navigation";
 @import "components/header";
 @import "components/footer";
 @import "components/blocks";
+@import "components/modes";
+@import "components/types";
+@import "components/pager";
+@import "components/search";
 @import "components/comments";
 @import "components/meta";
-@import "components/feature";
+@import "components/marquee";

@@ -193,6 +193,36 @@ function center_field($variables) {
 }
 
 /**
+ * Overrides theme_ds_field_minimal().
+ * Still allow the normal drupal field classes to apply.
+ */
+function center_field__minimal($variables) {
+  $output = '';
+
+  $config = $variables['ds-config'];
+
+  // Add a simple wrapper.
+  $output .= '<div class="' . $variables['classes'] . '">';
+
+  // Render the label.
+  if (!$variables['label_hidden']) {
+    $output .= '<div' . $variables['title_attributes'] . '>' . $variables['label'];
+    if (!isset($config['lb-col'])) {
+      $output .= ':&nbsp;';
+    }
+    $output .= '</div>';
+  }
+
+  // Render the items.
+  foreach ($variables['items'] as $delta => $item) {
+    $output .= drupal_render($item);
+  }
+  $output .="</div>";
+
+  return $output;
+}
+
+/**
  * Custom implementation of theme_field()
  * Turns multivalued fields into a comma separated list.
  * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_separated';

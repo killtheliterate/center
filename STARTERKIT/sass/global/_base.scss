@@ -1,3 +1,93 @@
+// Establish Vertical rhythm.
+@include establish-baseline();
+
 html > body {
-  @include adjust-leading-to(3, $base-font-size);
+  @include adjust-leading-to(2);
+  color: $primary-color;
+  font-family: $primary-typeface;
+}
+
+// Headings
+//-----------------------------------------------------------------------------
+
+h1 {
+  @include adjust-font-size-to($h1-font-size);
+  @include rhythm(0, 0, 0, 1, $h1-font-size);
+  font-family: $primary-typeface;
+}
+
+h2 {
+  @include adjust-font-size-to($h2-font-size, 3);
+  @include rhythm(0, 0, 0, 1, $h2-font-size);
+}
+
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+  @include rhythm(2, 0, 0, 2, $h3-font-size);
+  font-family: $secondary-typeface;
+  font-weight: normal;
+}
+
+h4 {
+  @include adjust-font-size-to($h4-font-size);
+  @include rhythm(4, 0, 0, 0, $h4-font-size);
+  text-transform: uppercase;
+}
+
+h5 {
+  @include adjust-font-size-to($h5-font-size);
+  @include rhythm(4, 0, 0, 0, $h5-font-size);
+  font-weight: normal;
+}
+
+h6 {
+  @include adjust-font-size-to($h6-font-size);
+  @include rhythm(4, 0, 0, 0, $h6-font-size);
+}
+
+
+// Links
+//-----------------------------------------------------------------------------
+
+a {
+  @include link-colors($secondary-color, darken($secondary-color, 10%));
+  @include hover-link;
+}
+
+
+// Copy
+//-----------------------------------------------------------------------------
+
+p {
+  margin: 0 0 rhythm(2);
+}
+
+// Images
+//-----------------------------------------------------------------------------
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Definition Lists
+//-----------------------------------------------------------------------------
+
+dl {
+  margin-bottom: rhythm(3);
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: $w-gutter;
+}
+
+// Utility classes
+//-----------------------------------------------------------------------------
+
+.clearfix {
+  @include legacy-pie-clearfix;
 }

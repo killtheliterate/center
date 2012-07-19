@@ -1,5 +1,5 @@
-
 //  Global
+// ---------------------
 
 button:focus,
 input:focus,
@@ -13,11 +13,13 @@ textarea:focus {
 }
 
 //  Labels
+// ---------------------
 
 label,
 fieldset-legend {
   @include adjust-font-size-to(12px, 1);
   font-weight: 600;
+  margin-bottom: rhythm(1, 12px);
 }
 
 .form-required {
@@ -26,6 +28,7 @@ fieldset-legend {
 }
 
 //  Form Fields
+// ---------------------
 
 textarea,
 select,
@@ -43,10 +46,65 @@ input[type="time"],
 input[type="url"],
 input[type="week"] {
   @include border-radius(3px);
+  @include box-sizing(border-box);
+  padding: 2px $w-gutter-half;
+  max-width: 100%;
   background-color: $white;
-  border-color: $gray $gray-light $gray-light;
+  border: 1px $gray solid;
   color: $gray-darker;
   &:focus {
     border-color: $gray;
+  }
+}
+
+// Views exposed filters
+// ---------------------
+
+.views-exposed-form {
+  background-color: $blue-white;
+  padding: rhythm(1) $w-gutter-half 0;
+
+  @include breakpoint($tablet-wide) {
+    .views-widget,
+    label {
+      @include inline-block;
+      margin-right: $w-gutter-half;
+    }
+
+    select {
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.views-exposed-widget {
+  @include inline-block;
+  margin-right: $w-gutter;
+  float: left;
+}
+
+.views-submit-button > .form-submit {
+  @extend .button-primary;
+}
+
+.views-submit-button {
+  clear: left;
+
+  @include breakpoint($mobile) {
+    clear: none;
+  }
+}
+
+.views-submit-button,
+.views-reset-button {
+  @include breakpoint($mobile) {
+    position: relative;
+    top: 15px;
+    margin-right: $w-gutter-half;
+  }
+
+  @include breakpoint($tablet-wide) {
+    top: 0;
   }
 }

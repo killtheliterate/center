@@ -3,7 +3,16 @@
 // Variables for use throughout this compass project.
 
 
-//
+// IE Support
+//-----------------------------------------------------------------------------
+
+// Setting this to false will result in smaller output, but no support for ie6 hacks.
+$legacy-support-for-ie6: false; // Overrides default set in Support partial.
+
+// Setting this to false will result in smaller output, but no support for ie7 hacks.
+$legacy-support-for-ie7: true; // Overrides default set in Support partial.
+
+
 // IE Support
 //-----------------------------------------------------------------------------
 
@@ -11,26 +20,7 @@
 // $legacy-support-for-ie6: true; // Overrides default set in Support partial.
 
 // Setting this to false will result in smaller output, but no support for ie7 hacks.
-// $legacy-support-for-ie7: true; // Overrides default set in Support partial.
-
-
-//  Colors
-//-----------------------------------------------------------------------------
-
-//
-// @file
-// Variables for use throughout this compass project.
-
-
-//
-// IE Support
-//-----------------------------------------------------------------------------
-
-// Setting this to false will result in smaller output, but no support for ie6 hacks.
-// $legacy-support-for-ie6: true; // Overrides default set in Support partial.
-
-// Setting this to false will result in smaller output, but no support for ie7 hacks.
-// $legacy-support-for-ie7: true; // Overrides default set in Support partial.
+$legacy-support-for-ie7: true; // Overrides default set in Support partial.
 
 
 //  Colors
@@ -38,47 +28,66 @@
 
 $white:             #ffffff;
 $black:             #000000;
-$black-lighter:     #291511;
 
 $gray-white:        #F0F1F2;
-$gray-lightest:     #E5E5E5;
-$gray-light:        #E1E3E6;
+$gray-lightest:     #e9eaec;
+$gray-lighter:      #E5E5E5;
+$gray-light:        #ECECEC;
 $gray:              #C3C7CC;
-$gray-dark:         #68707e;
-$gray-darker:       #424c5e; //default
-$gray-darkest:      #182643;
+$gray-dark:         #424c5e;
+$gray-darker:       #291511;
+$gray-darkest:      #282425;
+$gray-black:        #181818;
 
 $red:               #b52847;
 $red-dark:          #95223C;
 
-$primary-color:     $gray-dark;       // Default body copy color
-$secondary-color:   $green;           // Default link color
-$accent-color:      $blue;            // Default heading color
+$orange:            #ef5c0b;
+
+$green-lighter:     #b1d233;
+$green:             #9cc524;
+$green-dark:        #8cbc1a;
+$green-darker:      #78b00d;
+$green-darkest:     #5e9a08;
+
+$blue-white:        #ecf3f7;
+$blue-lightest:     #c9e7f6;
+$blue-lighter:      #c9e7f6;
+$blue-light:        #ccffff;
+$blue:              #33679a;
+$blue-dark:         #265380;
+$blue-darker:       #193d61;
+$blue-darkest:      #0f2840;
+$blue-black:        #091827;
+
+$primary-color:     $gray;            // Default body copy color
+$secondary-color:   $blue;            // Default link color
+$accent-color:      $green;           // Default heading color
 $warning-color:     $red;             // Default error and required color
 
 
 //  Typography
-//----------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 //  Typefaces
-$primary-typeface:    Georgia, sans-serif;
-$secondary-typeface:  Helvetica, Arial, sans-serif;
+$primary-typeface:    "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+$secondary-typeface:  "Droid Serif", Georgia, serif;
 $tertiary-typeface:   $secondary-typeface;
 $base-font-family:    $primary-typeface;
 
 //  Font sizes
-$fs-xxs:     11px;
-$fs-xs:      12px;
-$fs-s:       13px;
-$fs-m:       14px;
-$fs-l:       16px;
+$fs-xxs:     9px;
+$fs-xs:      11px;
+$fs-s:       12px;
+$fs-m:       13px;
+$fs-l:       14px;
 $fs-xl:      18px;
 $fs-xxl:     24px;
 $fs-xxxl:    30px;
 $fs-xxxxl:   36px;
-$fs-xxxxxl:  40px;
+$fs-xxxxxl:  50px;
 
-$h1-font-size: $fs-xxxxl !default;
+$h1-font-size: $fs-xxxxxl !default;
 $h2-font-size: $fs-xxl !default;
 $h3-font-size: $fs-xl !default;
 $h4-font-size: $fs-m !default;
@@ -89,79 +98,49 @@ $h6-font-size: $fs-xs !default;
 $indent-amount: 48px !default;
 
 // Vertical Ryhthm
-$base-font-size:    $fs-m;       // Font-size of your body copy.
-$base-line-height:  7px;         // Setting the base-line-height half
-                                 // the height of the desired body copy
-                                 // line-height helps prevent sparse
+$base-font-size:    16px;        // Font-size of your body copy.
+$base-line-height:  12px;        // Setting the base-line-height half.
+                                 // the height of the desired body copy.
+                                 // line-height helps prevent sparse.
                                  // leading at different font-sizes.
 
 
+// Zen Grids
+//-----------------------------------------------------------------------------
+
+$zen-column-count: 12;
+$zen-gutter-width: 12px;
+$box-sizing-polyfill-path: "/sites/all/themes/center/boxsizing.htc";
+
+
 //  Layout
-//----------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 $w-full: 1080px;
-$w-content: 896px;
-$w-sidebar-first: 184px;
-$w-sidebar-second: 344px;
-$w-gutter: 24px;
+$w-content: 620px;
+$w-sidebar: 320px;
+$w-sidebar-first: 320px;
+$w-gutter: $zen-gutter-width * 2;
+$w-gutter-half: $zen-gutter-width;
+
+
+//  Breakpoints
+//-----------------------------------------------------------------------------
+
+$mobile: 480px;
+$mobile-wide: 600px;
+$tablet: 768px;
+$tablet-wide: 992px;
+$desktop: 1080px;
+$desktop-wide: 1382px;
 
 
 //  CSS3
-//----------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 
 $default-transition-duration: .15s;
 
-
-
-//  Typography
-//----------------------------------------------------------------------------------------------------
-
-//  Typefaces
-$primary-typeface:    Georgia, sans-serif;
-$secondary-typeface:  Helvetica, Arial, sans-serif;
-$tertiary-typeface:   $secondary-typeface;
-$base-font-family:    $primary-typeface;
-
-//  Font sizes
-$fs-xxs:     9px;
-$fs-xs:      10px;
-$fs-s:       11px;
-$fs-m:       12px;
-$fs-l:       14px;
-$fs-xl:      16px;
-$fs-xxl:     24px;
-$fs-xxxl:    30px;
-$fs-xxxxl:   36px;
-$fs-xxxxxl:  40px;
-
-$h1-font-size: $fs-xxxxl !default;
-$h2-font-size: $fs-xxl !default;
-$h3-font-size: $fs-xl !default;
-$h4-font-size: $fs-m !default;
-$h5-font-size: $fs-s !default;
-$h6-font-size: $fs-xs !default;
-
-// The amount lists and blockquotes are indented.
-$indent-amount: 40px !default;
-
-// Vertical Ryhthm
-$base-font-size:    $fs-m;       // Font-size of your body copy.
-$base-line-height:  7px;         // Setting the base-line-height half
-                                 // the height of the desired body copy
-                                 // line-height helps prevent sparse
-                                 // leading at different font-sizes.
-
-
-//  Layout
-//----------------------------------------------------------------------------------------------------
-
-$width-full: 940px;
-$width-content: 620px;
-$width-sidebar: 320px;
-$width-gutter: 20px;
-
-
-//  CSS3
-//----------------------------------------------------------------------------------------------------
-
-$default-transition-duration: .15s;
+// Text shadow defaults
+$default-text-shadow-color: rgba($gray-dark, .6);
+$default-text-shadow-blur: 1px;
+$default-text-shadow-v-offset: 1px;
