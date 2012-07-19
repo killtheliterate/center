@@ -1,8 +1,8 @@
 ;-------------- B A S I C   S E T T I N G S -------------
 name = RENAME_THIS
-description = A responsive, robust base theme
+description = Enter description here
 core = 7.x
-base = center
+base theme = center
 
 ;-------------- F E A T U R E S -------------
 
