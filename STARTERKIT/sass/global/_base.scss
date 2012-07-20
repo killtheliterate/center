@@ -91,3 +91,7 @@ dd {
 .clearfix {
   @include legacy-pie-clearfix;
 }
+
+.intro {
+  @include adjust-font-size-to($fs-xxl);
+}

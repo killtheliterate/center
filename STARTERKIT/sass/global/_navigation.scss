@@ -135,7 +135,6 @@
     @include background-image(linear-gradient(top, $gray-light $gray-dark));
     // Hide menu on small screens.
     display: none;
-    float: left;
     margin: 0;
     border-top: 1px solid $gray-light;
     border-bottom: 1px solid $gray-light;
