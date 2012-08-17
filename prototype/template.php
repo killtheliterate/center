@@ -64,8 +64,9 @@ function prototype_preprocess_field(&$vars) {
 
   // Apply odd or even classes along with our custom classes to each item */
   foreach ($vars['items'] as $delta => $item) {
-    $item_classes[] = $delta % 2 ? 'odd' : 'even';
     $vars['item_attributes_array'][$delta]['class'] = $item_classes;
+    $striping = $delta % 2 ? 'odd' : 'even';
+    $vars['item_attributes_array'][$delta]['class'][] = $striping;
   }
 }
 
