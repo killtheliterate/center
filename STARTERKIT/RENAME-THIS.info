@@ -22,7 +22,7 @@ regions[above_content]      = Above Content
 regions[content]            = Content
 regions[sidebar_first]      = Sidebar First
 regions[sidebar_second]     = Sidebar Second
-regions[sidebar_first]      = Below Content
+regions[below_content]      = Below Content
 
 regions[footer]             = Footer
 regions[admin_footer]       = Admin Footer
