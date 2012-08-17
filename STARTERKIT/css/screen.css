@@ -1,16 +1,160 @@
-/* line 50, icon/*.png */
-.icon-sprite, .more-link:after, .download-link:before {
-  background: url('../images/icon-s7d0348ad86.png') no-repeat;
+/* line 58, icon/*.png */
+.icon-sprite, .read-more:after,
+.node-link a:after {
+  background: url('../images/icon-s419a39d16a.png') no-repeat;
 }
 
-/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
-/* =============================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/*
- * Corrects block display not defined in IE6/7/8/9 & FF3
- */
-/* line 21, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 4, ../sass/partials/_buttons.scss */
+.button-primary, .views-submit-button > .form-submit, #styleguide-header a {
+  @inlude inline-block;
+  border-style: solid;
+  border-width: 1px;
+}
+/* line 9, ../sass/partials/_buttons.scss */
+.button-primary:hover, .views-submit-button > .form-submit:hover, #styleguide-header a:hover {
+  text-decoration: none;
+}
+
+/* line 25, ../sass/partials/_buttons.scss */
+.read-more,
+.node-link a {
+  font-size: 0.78571em;
+  line-height: 1.63636em;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+  border-radius: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.27273em 10px;
+}
+
+/* line 33, ../sass/partials/_buttons.scss */
+.button-primary, .views-submit-button > .form-submit {
+  font-size: 1.07143em;
+  line-height: 1.6em;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  border-radius: 35px;
+  font-weight: bold;
+  padding: 0.2em 13px;
+}
+
+/* line 50, ../sass/partials/_buttons.scss */
+#styleguide-header a {
+  color: #68707e;
+  border-color: #c3c7cc;
+}
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#styleguide-header a:hover {
+  color: #424c5e;
+}
+/* line 54, ../sass/partials/_buttons.scss */
+#styleguide-header a:hover {
+  border-color: #68707e;
+}
+/* line 58, ../sass/partials/_buttons.scss */
+#styleguide-header a:active {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1e3e6), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #e1e3e6, #ffffff);
+  background-image: -moz-linear-gradient(top, #e1e3e6, #ffffff);
+  background-image: -o-linear-gradient(top, #e1e3e6, #ffffff);
+  background-image: linear-gradient(top, #e1e3e6, #ffffff);
+  -webkit-box-shadow: #a5aab2 0 1px 1px inset;
+  -moz-box-shadow: #a5aab2 0 1px 1px inset;
+  box-shadow: #a5aab2 0 1px 1px inset;
+}
+
+/* line 64, ../sass/partials/_buttons.scss */
+.button-primary, .views-submit-button > .form-submit {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #304ea3), color-stop(100%, #5182c8));
+  background-image: -webkit-linear-gradient(bottom, #304ea3, #5182c8);
+  background-image: -moz-linear-gradient(bottom, #304ea3, #5182c8);
+  background-image: -o-linear-gradient(bottom, #304ea3, #5182c8);
+  background-image: linear-gradient(bottom, #304ea3, #5182c8);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0 0, #273e98 0 -1px 2px 0px inset, #3a5dae 0 -12px 0 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0 0, #273e98 0 -1px 2px 0px inset, #3a5dae 0 -12px 0 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0 0, #273e98 0 -1px 2px 0px inset, #3a5dae 0 -12px 0 0 inset;
+  color: #f0f1f2;
+  text-shadow: 0 1px 0 #304ea3;
+  background-color: #68707e;
+  border: none;
+}
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.button-primary:hover, .views-submit-button > .form-submit:hover {
+  color: white;
+}
+/* line 78, ../sass/partials/_buttons.scss */
+.button-primary:hover, .views-submit-button > .form-submit:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3a5dae), color-stop(100%, #4772bd));
+  background-image: -webkit-linear-gradient(top, #3a5dae, #4772bd);
+  background-image: -moz-linear-gradient(top, #3a5dae, #4772bd);
+  background-image: -o-linear-gradient(top, #3a5dae, #4772bd);
+  background-image: linear-gradient(top, #3a5dae, #4772bd);
+}
+/* line 84, ../sass/partials/_buttons.scss */
+.button-primary:active, .views-submit-button > .form-submit:active {
+  -webkit-box-shadow: #68707e 0 1px 2px inset;
+  -moz-box-shadow: #68707e 0 1px 2px inset;
+  box-shadow: #68707e 0 1px 2px inset;
+  background-color: #314e88;
+}
+
+/* line 91, ../sass/partials/_buttons.scss */
+#block-search-form input[type="submit"] {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #4e545e), color-stop(100%, #828c9d));
+  background-image: -webkit-linear-gradient(bottom, #4e545e, #828c9d);
+  background-image: -moz-linear-gradient(bottom, #4e545e, #828c9d);
+  background-image: -o-linear-gradient(bottom, #4e545e, #828c9d);
+  background-image: linear-gradient(bottom, #4e545e, #828c9d);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0 0, #3e434b 0 -1px 2px 0px inset, #5d6471 0 -12px 0 0 inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0 0, #3e434b 0 -1px 2px 0px inset, #5d6471 0 -12px 0 0 inset;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0 0, #3e434b 0 -1px 2px 0px inset, #5d6471 0 -12px 0 0 inset;
+  color: #f0f1f2;
+  text-shadow: 0 1px 0 #4e545e;
+  background-color: #68707e;
+  border: none;
+}
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+#block-search-form input[type="submit"]:hover {
+  color: white;
+}
+/* line 105, ../sass/partials/_buttons.scss */
+#block-search-form input[type="submit"]:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d6471), color-stop(100%, #727b8a));
+  background-image: -webkit-linear-gradient(top, #5d6471, #727b8a);
+  background-image: -moz-linear-gradient(top, #5d6471, #727b8a);
+  background-image: -o-linear-gradient(top, #5d6471, #727b8a);
+  background-image: linear-gradient(top, #5d6471, #727b8a);
+}
+/* line 111, ../sass/partials/_buttons.scss */
+#block-search-form input[type="submit"]:active {
+  -webkit-box-shadow: #68707e 0 1px 2px inset;
+  -moz-box-shadow: #68707e 0 1px 2px inset;
+  box-shadow: #68707e 0 1px 2px inset;
+  background-color: #424c5e;
+}
+
+/* line 175, ../sass/partials/_buttons.scss */
+.read-more:after,
+.node-link a:after {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  content: "";
+  position: relative;
+  width: 18px;
+  height: 18px;
+  top: -1px;
+}
+
+/* line 19, ../sass/global/_normalize.scss */
 article,
 aside,
 details,
@@ -25,62 +169,25 @@ summary {
   display: block;
 }
 
-/*
- * Corrects inline-block display not defined in IE6/7/8/9 & FF3
- */
-/* line 31, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 29, ../sass/global/_normalize.scss */
 audio,
 canvas,
 video {
   display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
-/*
- * Prevents modern browsers from displaying 'audio' without controls
- * Remove excess height in iOS5 devices
- */
-/* line 44, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 42, ../sass/global/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/*
- * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
- * Known issue: no IE6 support
- */
-/* line 54, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 52, ../sass/global/_normalize.scss */
 [hidden] {
   display: none;
 }
 
-/* =============================================================================
-   Base
-   ========================================================================== */
-/*
- * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
- *    http://clagnut.com/blog/348/#c790
- * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
- *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
- */
-/* line 70, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
-html {
-  font-size: 100%;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  /* Establishes a vertical rhythm unit using $base-line-height. */
-  line-height: 0.75em;
-}
-
-/*
- * Addresses font-family inconsistency between 'textarea' and other form elements.
- */
-/* line 86, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 76, ../sass/global/_normalize.scss */
 html,
 button,
 input,
@@ -89,194 +196,138 @@ textarea {
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/*
- * Addresses margins handled incorrectly in IE6/7
- */
-/* line 94, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 84, ../sass/global/_normalize.scss */
 body {
   margin: 0;
 }
 
-/* =============================================================================
-   Links
-   ========================================================================== */
-/*
- * Addresses outline displayed oddly in Chrome
- */
-/* line 107, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 97, ../sass/global/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/*
- * Improves readability when focused and also mouse hovered in all browsers
- * people.opera.com/patrickl/experiments/keyboard/test
- */
-/* line 117, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 107, ../sass/global/_normalize.scss */
 a:hover,
 a:active {
   outline: 0;
 }
 
-/* =============================================================================
-   Typography
-   ========================================================================== */
-/*
- * Addresses font sizes and margins set differently in IE6/7
- * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
- */
-/* line 131, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 121, ../sass/global/_normalize.scss */
 h1 {
-  /* Sets the font-size and line-height while keeping a proper vertical rhythm. */
-  font-size: 3.125em;
-  line-height: 1.2em;
-  /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
-  margin-top: 0.24em;
-  margin-bottom: 0.24em;
+  font-size: 2.57143em;
+  line-height: 1.16667em;
+  margin-top: 0.16667em;
+  margin-bottom: 0.16667em;
 }
 
-/* line 140, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 130, ../sass/global/_normalize.scss */
 h2 {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  font-size: 1.71429em;
+  line-height: 1.25em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
-/* line 146, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 136, ../sass/global/_normalize.scss */
 h3 {
-  font-size: 1.125em;
-  line-height: 1.333em;
-  margin-top: 0.667em;
-  margin-bottom: 0.667em;
+  font-size: 1.14286em;
+  line-height: 1.5em;
+  margin-top: 0.375em;
+  margin-bottom: 0.375em;
 }
 
-/* line 152, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 142, ../sass/global/_normalize.scss */
 h4 {
-  font-size: 0.813em;
-  line-height: 1.846em;
-  margin-top: 0.923em;
-  margin-bottom: 0.923em;
+  font-size: 1em;
+  line-height: 1.28571em;
+  margin-top: 0.42857em;
+  margin-bottom: 0.42857em;
 }
 
-/* line 158, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 148, ../sass/global/_normalize.scss */
 h5 {
-  font-size: 0.75em;
-  line-height: 2em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-size: 0.92857em;
+  line-height: 1.38462em;
+  margin-top: 0.46154em;
+  margin-bottom: 0.46154em;
 }
 
-/* line 164, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 154, ../sass/global/_normalize.scss */
 h6 {
-  font-size: 0.688em;
-  line-height: 2.182em;
-  margin-top: 1.091em;
-  margin-bottom: 1.091em;
+  font-size: 0.78571em;
+  line-height: 1.63636em;
+  margin-top: 0.54545em;
+  margin-bottom: 0.54545em;
 }
 
-/*
- * Addresses styling not present in IE7/8/9, S5, Chrome
- */
-/* line 174, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 164, ../sass/global/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/*
- * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
-*/
-/* line 183, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 173, ../sass/global/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 187, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 177, ../sass/global/_normalize.scss */
 blockquote {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 0.75em 48px;
+  margin: 0.42857em 48px;
 }
 
-/*
- * Addresses styling not present in S5, Chrome
- */
-/* line 196, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 186, ../sass/global/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/*
- * Addresses styling not present in IE6/7/8/9
- */
-/* line 204, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 194, ../sass/global/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/*
- * Addresses margins set differently in IE6/7
- */
-/* line 214, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 204, ../sass/global/_normalize.scss */
 p,
 pre {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 0.75em 0;
+  margin: 0.42857em 0;
 }
 
-/*
- * Corrects font family set oddly in IE6, S4/5, Chrome
- * en.wikipedia.org/wiki/User:Davidgothberg/Test59
- */
-/* line 227, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 217, ../sass/global/_normalize.scss */
 pre,
 code,
 kbd,
 samp {
   font-family: monospace, serif;
   font-size: 1em;
-  line-height: 1.5em;
+  line-height: 1.28571em;
 }
 
-/*
- * Improves readability of pre-formatted text in all browsers
- */
-/* line 239, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 229, ../sass/global/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/*
- * 1. Addresses CSS quotes not supported in IE6/7
- * 2. Addresses quote property not supported in S4
- */
-/* 1 */
-/* line 252, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 242, ../sass/global/_normalize.scss */
 q {
   quotes: none;
 }
 
-/* 2 */
-/* line 259, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 249, ../sass/global/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 264, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 254, ../sass/global/_normalize.scss */
 small {
   font-size: 75%;
 }
 
-/*
- * Prevents sub and sup affecting line-height in all browsers
- * gist.github.com/413930
- */
-/* line 274, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 264, ../sass/global/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -285,405 +336,299 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 281, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 271, ../sass/global/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 285, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 275, ../sass/global/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* =============================================================================
-   Lists
-   ========================================================================== */
-/*
- * Addresses margins set differently in IE6/7
- */
-/* line 301, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 291, ../sass/global/_normalize.scss */
 dl,
 menu,
 ol,
 ul {
-  /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: 0.75em 0;
+  margin: 0.42857em 0;
 }
 
-/* line 306, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 296, ../sass/global/_normalize.scss */
 dd {
   margin: 0 0 0 48px;
 }
 
-/*
- * Addresses paddings set differently in IE6/7
- */
-/* line 316, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 306, ../sass/global/_normalize.scss */
 menu,
 ol,
 ul {
   padding: 0 0 0 48px;
 }
 
-/*
- * Corrects list images handled incorrectly in IE7
- */
-/* line 325, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 315, ../sass/global/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
 }
 
-/* =============================================================================
-   Embedded content
-   ========================================================================== */
-/*
- * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
- * 2. Improves image quality when scaled in IE7
- *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
- */
-/* line 341, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 331, ../sass/global/_normalize.scss */
 img {
   border: 0;
-  /* 1 */
   -ms-interpolation-mode: bicubic;
-  /* 2 */
 }
 
-/*
- * Corrects overflow displayed oddly in IE9
- */
-/* line 350, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 340, ../sass/global/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* =============================================================================
-   Figures
-   ========================================================================== */
-/*
- * Addresses margin not present in IE6/7/8/9, S5, O11
- */
-/* line 363, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 353, ../sass/global/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* =============================================================================
-   Forms
-   ========================================================================== */
-/*
- * Corrects margin displayed oddly in IE6/7
- */
-/* line 376, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 366, ../sass/global/_normalize.scss */
 form {
   margin: 0;
 }
 
-/*
- * Define consistent border, margin, and padding
- */
-/* line 384, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 374, ../sass/global/_normalize.scss */
 fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
-  /* Apply borders and padding that keep the vertical rhythm. */
   border-top-style: solid;
-  border-top-width: 0.063em;
-  padding-top: 0.2em;
+  border-top-width: 0.07143em;
+  padding-top: 0.07857em;
   border-bottom-style: solid;
-  border-bottom-width: 0.063em;
-  padding-bottom: 0.425em;
+  border-bottom-width: 0.07143em;
+  padding-bottom: 0.20714em;
   border-left-style: solid;
-  border-left-width: 0.063em;
-  padding-left: 0.406em;
+  border-left-width: 0.07143em;
+  padding-left: 0.19643em;
   border-right-style: solid;
-  border-right-width: 0.063em;
-  padding-right: 0.406em;
+  border-right-width: 0.07143em;
+  padding-right: 0.19643em;
 }
 
-/*
- * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3
- * 3. Corrects alignment displayed oddly in IE6/7
- */
-/* line 400, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 390, ../sass/global/_normalize.scss */
 legend {
   border: 0;
-  /* 1 */
   padding: 0;
   white-space: normal;
-  /* 2 */
-  *margin-left: -7px;
-  /* 3 */
 }
 
-/*
- * 1. Corrects font size not being inherited in all browsers
- * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
- * 3. Improves appearance and consistency in all browsers
- */
-/* line 418, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 408, ../sass/global/_normalize.scss */
 button,
 input,
 select,
 textarea {
   font-size: 100%;
-  /* 1 */
   margin: 0;
-  /* 2 */
   vertical-align: baseline;
-  /* 3 */
-  *vertical-align: middle;
-  /* 3 */
 }
 
-/*
- * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
- */
-/* line 432, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 422, ../sass/global/_normalize.scss */
 button,
 input {
   line-height: normal;
-  /* 1 */
 }
 
-/*
- * 1. Improves usability and consistency of cursor style between image-type 'input' and others
- * 2. Corrects inability to style clickable 'input' types in iOS
- * 3. Removes inner spacing in IE7 without affecting normal text inputs
- *    Known issue: inner spacing remains in IE6
- */
-/* line 446, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 436, ../sass/global/_normalize.scss */
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
-  /* 1 */
   -webkit-appearance: button;
-  /* 2 */
-  *overflow: visible;
-  /* 3 */
 }
 
-/*
- * Re-set default cursor for disabled elements
- */
-/* line 459, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 449, ../sass/global/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/*
- * 1. Addresses box sizing set to content-box in IE8/9
- * 2. Removes excess padding in IE8/9
- * 3. Removes excess padding in IE7
-      Known issue: excess padding remains in IE6
- */
-/* line 471, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 461, ../sass/global/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  /* 1 */
   padding: 0;
-  /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */
 }
 
-/*
- * 1. Addresses appearance set to searchfield in S5, Chrome
- * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
- */
-/* line 485, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 475, ../sass/global/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
-  /* 1 */
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  /* 2 */
 }
 
-/*
- * Removes inner padding and search cancel button in S5, Chrome on OS X
- */
-/* line 495, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 485, ../sass/global/_normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/*
- * Removes inner padding and border in FF3+
- * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
- */
-/* line 505, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 495, ../sass/global/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/*
- * 1. Removes default vertical scrollbar in IE6/7/8/9
- * 2. Improves readability and alignment in all browsers
- */
-/* line 515, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 505, ../sass/global/_normalize.scss */
 textarea {
   overflow: auto;
-  /* 1 */
   vertical-align: top;
-  /* 2 */
 }
 
-/* =============================================================================
-   Tables
-   ========================================================================== */
-/*
- * Remove most spacing between table cells
- */
-/* line 529, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_normalize.scss */
+/* line 519, ../sass/global/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 58, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-body {
-  font-size: 100%;
-  line-height: 0.75em;
+/* line 61, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 87.5%;
 }
 
-/* line 62, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html > body {
-  font-size: 16px;
+/* line 64, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 14px;
+  line-height: 0.42857em;
 }
 
-/* line 4, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 12, ../sass/global/_base.scss */
 html > body {
-  line-height: 1.5em;
-  color: #c3c7cc;
+  line-height: 1.28571em;
+  color: #68707e;
   font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
 }
 
-/* line 13, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 19, ../sass/global/_base.scss */
+body.html {
+  background-color: #f0f1f2;
+}
+
+/* line 26, ../sass/global/_base.scss */
 h1 {
-  font-size: 3.125em;
-  line-height: 1.2em;
+  font-size: 2.57143em;
+  line-height: 1.16667em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.24em;
-  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  margin-bottom: 0.16667em;
+  color: #e55c16;
 }
 
-/* line 19, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 32, ../sass/global/_base.scss */
 h2 {
-  font-size: 1.5em;
-  line-height: 1.5em;
+  font-size: 1.71429em;
+  line-height: 0.75em;
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
+  color: #e55c16;
+  font-family: "Droid Serif", Georgia, serif;
 }
 
-/* line 24, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 39, ../sass/global/_base.scss */
 h3 {
-  font-size: 1.125em;
-  line-height: 1.333em;
-  margin-top: 1.333em;
+  font-size: 1.14286em;
+  line-height: 1.5em;
+  margin-top: 0.75em;
   padding-top: 0em;
   padding-bottom: 0em;
-  margin-bottom: 1.333em;
+  margin-bottom: 0.75em;
   font-family: "Droid Serif", Georgia, serif;
-  font-weight: normal;
+  color: #e55c16;
 }
 
-/* line 31, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 46, ../sass/global/_base.scss */
 h4 {
-  font-size: 0.813em;
-  line-height: 1.846em;
-  margin-top: 3.692em;
+  font-size: 1em;
+  line-height: 1.28571em;
+  margin-top: 1.71429em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
+  font-family: "Droid Serif", Georgia, serif;
+  color: #e55c16;
+}
+
+/* line 53, ../sass/global/_base.scss */
+h5 {
+  font-size: 0.92857em;
+  line-height: 1.38462em;
+  margin-top: 1.84615em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+}
+
+/* line 58, ../sass/global/_base.scss */
+h6 {
+  font-size: 0.78571em;
+  line-height: 1.63636em;
+  margin-top: 2.18182em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  letter-spacing: .03em;
   text-transform: uppercase;
 }
 
-/* line 37, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
-h5 {
-  font-size: 0.75em;
-  line-height: 2em;
-  margin-top: 4em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
-  font-weight: normal;
-}
-
-/* line 43, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
-h6 {
-  font-size: 0.688em;
-  line-height: 2.182em;
-  margin-top: 4.364em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
-}
-
-/* line 52, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 69, ../sass/global/_base.scss */
 a {
-  color: #33679a;
+  color: #254590;
   text-decoration: none;
 }
-/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
-  color: #264d74;
+  color: #1b3267;
 }
-/* line 4, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_hover-link.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 61, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 78, ../sass/global/_base.scss */
 p {
-  margin: 0 0 1.5em;
+  margin: 0 0 0.85714em;
 }
 
-/* line 68, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 85, ../sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 76, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 93, ../sass/global/_base.scss */
 dl {
-  margin-bottom: 2.25em;
+  margin-bottom: 1.28571em;
 }
 
-/* line 80, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 97, ../sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 84, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 101, ../sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 91, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_base.scss */
+/* line 108, ../sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after {
   content: "\0020";
   display: block;
@@ -693,322 +638,68 @@ dd {
   visibility: hidden;
 }
 
-/* line 13, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-table {
-  max-width: 100%;
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-bottom: 1.5em;
+/* line 112, ../sass/global/_base.scss */
+.intro {
+  font-size: 1.28571em;
+  line-height: 1.33333em;
 }
 
-/* line 21, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-thead {
-  text-align: left;
-}
-/* line 24, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-thead th {
-  vertical-align: bottom;
-}
-
-/* line 33, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-th,
-td {
-  padding: 8px;
-  vertical-align: top;
-  border-top: 1px solid #ececec;
-}
-
-/* line 45, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-caption + thead tr:first-child th,
-caption + thead tr:first-child td,
-colgroup + thead tr:first-child th,
-colgroup + thead tr:first-child td,
-thead:first-child tr:first-child th,
-thead:first-child tr:first-child td {
-  border-top: 0;
-}
-
-/* line 50, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-tbody + tbody {
-  border-top: 2px solid #ececec;
-}
-
-/* line 59, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-.table-condensed th,
-.table-condensed td {
-  padding: 4px 5px;
-}
-
-/* line 67, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-tr.odd {
-  background-color: #f0f1f2;
-}
-
-/* line 68, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_tables.scss */
-tr.even {
-  background-color: transparent;
-}
-
-/* line 4, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit, .button-tiny, .more-link, .download-link {
-@inlude inline-block;
-  border-style: solid;
-  border-width: 1px;
-}
-/* line 9, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit:hover, .button-tiny:hover, .more-link:hover, .download-link:hover {
-  text-decoration: none;
-}
-
-/* line 17, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.button-tiny {
-  font-size: 0.563em;
-  line-height: 2.667em;
-  -webkit-border-radius: 16px;
-  -moz-border-radius: 16px;
-  -ms-border-radius: 16px;
-  -o-border-radius: 16px;
-  border-radius: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.333em 6px;
-}
-
-/* line 25, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.download-link {
-  font-size: 0.563em;
-  line-height: 2.667em;
-  -webkit-border-radius: 22px;
-  -moz-border-radius: 22px;
-  -ms-border-radius: 22px;
-  -o-border-radius: 22px;
-  border-radius: 22px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 0.667em 10px;
-}
-
-/* line 33, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit, .more-link {
-  font-size: 0.75em;
-  line-height: 2em;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-  border-radius: 35px;
-  font-weight: bold;
-  padding: 0.5em 13px;
-}
-
-/* line 50, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit, .button-tiny, .more-link, .download-link {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f1f2), color-stop(100%, #e9eaec));
-  background-image: -webkit-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: -moz-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: -o-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: -ms-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: linear-gradient(top, #f0f1f2, #e9eaec);
-  -webkit-box-shadow: white 0 1px 1px inset, rgba(66, 76, 94, 0.4) 0 1px 0px;
-  -moz-box-shadow: white 0 1px 1px inset, rgba(66, 76, 94, 0.4) 0 1px 0px;
-  box-shadow: white 0 1px 1px inset, rgba(66, 76, 94, 0.4) 0 1px 0px;
-  color: #424c5e;
-  background-color: #f0f1f2;
-  border-color: #c3c7cc;
-}
-/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-input.form-submit:hover, .button-tiny:hover, .more-link:hover, .download-link:hover {
-  color: #291511;
-}
-/* line 58, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit:hover, .button-tiny:hover, .more-link:hover, .download-link:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f0f1f2));
-  background-image: -webkit-linear-gradient(top, #ffffff, #f0f1f2);
-  background-image: -moz-linear-gradient(top, #ffffff, #f0f1f2);
-  background-image: -o-linear-gradient(top, #ffffff, #f0f1f2);
-  background-image: -ms-linear-gradient(top, #ffffff, #f0f1f2);
-  background-image: linear-gradient(top, #ffffff, #f0f1f2);
+/* line 10, ../sass/global/_images.scss */
+.image-frame > img,
+.image-frame > a > img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
+  -moz-box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
+  box-shadow: rgba(104, 112, 126, 0.6) 0 1px 3px;
+  padding: 4px;
   background-color: white;
 }
-/* line 63, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit:active, .button-tiny:active, .more-link:active, .download-link:active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c7cc), color-stop(100%, #e9eaec));
-  background-image: -webkit-linear-gradient(top, #c3c7cc, #e9eaec);
-  background-image: -moz-linear-gradient(top, #c3c7cc, #e9eaec);
-  background-image: -o-linear-gradient(top, #c3c7cc, #e9eaec);
-  background-image: -ms-linear-gradient(top, #c3c7cc, #e9eaec);
-  background-image: linear-gradient(top, #c3c7cc, #e9eaec);
-  -webkit-box-shadow: #424c5e 0 1px 1px inset;
-  -moz-box-shadow: #424c5e 0 1px 1px inset;
-  box-shadow: #424c5e 0 1px 1px inset;
+
+/* line 20, ../sass/global/_images.scss */
+.image-left {
+  float: left;
+  margin: 0 24px 0.42857em 0;
 }
 
-/* line 69, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.button-primary, .views-submit-button > .form-submit,
-input.button-primary,
-.views-submit-button > input.form-submit,
-.node-webform #edit-submit, #block-search-form input[type="submit"] {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c9e7f6), color-stop(100%, #193d61));
-  background-image: -webkit-linear-gradient(top, #c9e7f6, #193d61);
-  background-image: -moz-linear-gradient(top, #c9e7f6, #193d61);
-  background-image: -o-linear-gradient(top, #c9e7f6, #193d61);
-  background-image: -ms-linear-gradient(top, #c9e7f6, #193d61);
-  background-image: linear-gradient(top, #c9e7f6, #193d61);
-  -webkit-box-shadow: #c9e7f6 0 1px 0px inset, rgba(66, 76, 94, 0.4) 0 1px 0px;
-  -moz-box-shadow: #c9e7f6 0 1px 0px inset, rgba(66, 76, 94, 0.4) 0 1px 0px;
-  box-shadow: #c9e7f6 0 1px 0px inset, rgba(66, 76, 94, 0.4) 0 1px 0px;
-  color: white;
-  background-color: #c9e7f6;
-  border-color: #193d61 #0f2840 #0f2840;
-}
-/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.button-primary:hover, .views-submit-button > .form-submit:hover,
-.views-submit-button > input.form-submit:hover,
-.node-webform #edit-submit:hover, #block-search-form input[type="submit"]:hover {
-  color: white;
-}
-/* line 77, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.button-primary:hover, .views-submit-button > .form-submit:hover,
-.views-submit-button > input.form-submit:hover,
-.node-webform #edit-submit:hover, #block-search-form input[type="submit"]:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c9e7f6), color-stop(100%, #ccffff));
-  background-image: -webkit-linear-gradient(top, #c9e7f6, #ccffff);
-  background-image: -moz-linear-gradient(top, #c9e7f6, #ccffff);
-  background-image: -o-linear-gradient(top, #c9e7f6, #ccffff);
-  background-image: -ms-linear-gradient(top, #c9e7f6, #ccffff);
-  background-image: linear-gradient(top, #c9e7f6, #ccffff);
-}
-/* line 81, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.button-primary:active, .views-submit-button > .form-submit:active,
-.views-submit-button > input.form-submit:active,
-.node-webform #edit-submit:active, #block-search-form input[type="submit"]:active {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #265380), color-stop(100%, #33679a));
-  background-image: -webkit-linear-gradient(top, #265380, #33679a);
-  background-image: -moz-linear-gradient(top, #265380, #33679a);
-  background-image: -o-linear-gradient(top, #265380, #33679a);
-  background-image: -ms-linear-gradient(top, #265380, #33679a);
-  background-image: linear-gradient(top, #265380, #33679a);
-  -webkit-box-shadow: #424c5e 0 1px 2px inset;
-  -moz-box-shadow: #424c5e 0 1px 2px inset;
-  box-shadow: #424c5e 0 1px 2px inset;
-  background-color: #265380;
+/* line 25, ../sass/global/_images.scss */
+.image-right {
+  float: right;
+  margin: 0 0 0.42857em 24px;
 }
 
-/* line 95, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit, .more-link {
-  text-shadow: 0 1px 0 white;
-}
-
-/* line 111, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.download-link:before {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  content: "";
-  position: relative;
-  width: 18px;
-  height: 18px;
-  top: -1px;
-  margin-right: 4px;
-}
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.download-link:before {
-  *display: inline;
-}
-
-/* line 119, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.more-link:after {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  content: "";
-  position: relative;
-  width: 18px;
-  height: 18px;
-  top: -1px;
-  margin-left: 4px;
-}
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.more-link:after {
-  *display: inline;
-}
-
-/* line 142, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-input.form-submit {
-  margin-bottom: 0.75em;
-}
-
-/* line 150, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.form-actions {
-  margin: 0;
-  padding: 0 0 1em 0;
-}
-/* line 153, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.form-actions input.form-submit {
-  margin-right: 24px;
-}
-
-/* line 160, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.button-primary, .views-submit-button > .form-submit,
-input.button-primary,
-.views-submit-button > input.form-submit,
-.node-webform #edit-submit {
-  text-shadow: 0 0 0 transparent;
-}
-
-/* line 172, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.more-link {
-  margin-right: 12px;
-}
-/* line 180, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.more-link:after {
-  background-position: 0 -18px;
-}
-
-/* line 192, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_buttons.scss */
-.download-link:before {
-  background-position: 0 0;
-  left: -8px;
-  top: -2px;
-  margin-right: 0;
-}
-
-/* line 7, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 10, ../sass/global/_forms.scss */
 button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  -webkit-box-shadow: 0 0 5px #c3c7cc;
-  -moz-box-shadow: 0 0 5px #c3c7cc;
-  box-shadow: 0 0 5px #c3c7cc;
+  -webkit-box-shadow: 0 0 5px #a5aab2;
+  -moz-box-shadow: 0 0 5px #a5aab2;
+  box-shadow: 0 0 5px #a5aab2;
 }
 
-/* line 11, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 14, ../sass/global/_forms.scss */
 .form-item {
   margin: 0 0 1em 0;
 }
 
-/* line 19, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 22, ../sass/global/_forms.scss */
 label,
 fieldset-legend {
-  font-size: 0.75em;
-  line-height: 1em;
+  font-size: 0.85714em;
+  line-height: 1.5em;
   font-weight: 600;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
-/* line 25, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 28, ../sass/global/_forms.scss */
 .form-required {
   color: #b52847;
   font-weight: bold;
 }
 
-/* line 47, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 50, ../sass/global/_forms.scss */
 textarea,
 select,
 input[type="date"],
@@ -1032,13 +723,14 @@ input[type="week"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2px 12px;
+  padding: 2px;
+  margin-bottom: 0.42857em;
   max-width: 100%;
   background-color: white;
-  border: 1px #c3c7cc solid;
-  color: #291511;
+  border: 1px #a5aab2 solid;
+  color: #424c5e;
 }
-/* line 55, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 59, ../sass/global/_forms.scss */
 textarea:focus,
 select:focus,
 input[type="date"]:focus,
@@ -1054,65 +746,58 @@ input[type="text"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus {
-  border-color: #c3c7cc;
+  border-color: #a5aab2;
 }
 
-/* line 63, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 67, ../sass/global/_forms.scss */
 .views-exposed-form {
   background-color: #ecf3f7;
-  padding: 0.75em 12px 0;
+  padding: 0.42857em 12px 0;
 }
-@media screen and (min-width:  992px) {
-  /* line 69, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+@media (min-width: 992px) {
+  /* line 73, ../sass/global/_forms.scss */
   .views-exposed-form .views-widget,
   .views-exposed-form label {
-    display: -moz-inline-box;
-    -moz-box-orient: vertical;
+    display: -moz-inline-stack;
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
     margin-right: 12px;
   }
-  /* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-  .views-exposed-form .views-widget,
-  .views-exposed-form label {
-    *display: inline;
-  }
-  /* line 74, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+  /* line 78, ../sass/global/_forms.scss */
   .views-exposed-form select {
     position: relative;
     top: 2px;
   }
 }
 
-/* line 81, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 85, ../sass/global/_forms.scss */
 .views-exposed-widget {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   margin-right: 24px;
   float: left;
 }
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.views-exposed-widget {
-  *display: inline;
-}
 
-/* line 91, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+/* line 95, ../sass/global/_forms.scss */
 .views-submit-button {
   clear: left;
 }
-@media screen and (min-width:  480px) {
-  /* line 91, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+@media (min-width: 480px) {
+  /* line 95, ../sass/global/_forms.scss */
   .views-submit-button {
     clear: none;
   }
 }
 
-@media screen and (min-width:  480px) {
-  /* line 100, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+@media (min-width: 480px) {
+  /* line 104, ../sass/global/_forms.scss */
   .views-submit-button,
   .views-reset-button {
     position: relative;
@@ -1120,262 +805,304 @@ input[type="week"]:focus {
     margin-right: 12px;
   }
 }
-@media screen and (min-width:  992px) {
-  /* line 100, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_forms.scss */
+@media (min-width: 992px) {
+  /* line 104, ../sass/global/_forms.scss */
   .views-submit-button,
   .views-reset-button {
     top: 0;
   }
 }
 
-/* line 1, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_lists.scss */
-.no-bullets {
-  margin: 0;
-  padding: 0;
+/* line 118, ../sass/global/_forms.scss */
+#user-register-form .form-item,
+#user-login .form-item,
+#user-pass .form-item,
+#contact-site-form .form-item,
+#user-register-form .form-actions,
+#user-login .form-actions,
+#user-pass .form-actions,
+#contact-site-form .form-actions {
+  overflow: hidden;
+  *zoom: 1;
+  padding-left: 252px;
+  margin-bottom: 1.28571em;
 }
-/* line 5, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_lists.scss */
-.no-bullets li {
-  list-style: none;
+/* line 124, ../sass/global/_forms.scss */
+#user-register-form .form-item > label,
+#user-login .form-item > label,
+#user-pass .form-item > label,
+#contact-site-form .form-item > label {
+  float: left;
+  width: 228px;
+  margin-left: -252px;
+  text-align: right;
 }
-
-/* line 2, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_images.scss */
-.image-frame > img,
-.image-frame > a > img {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-box-shadow: rgba(66, 76, 94, 0.6) 0 1px 3px;
-  -moz-box-shadow: rgba(66, 76, 94, 0.6) 0 1px 3px;
-  box-shadow: rgba(66, 76, 94, 0.6) 0 1px 3px;
-  padding: 4px;
-  background-color: white;
-}
-
-/* line 1, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_headings.scss */
-.page-title {
-  font-size: 30px;
-}
-
-/* line 5, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_headings.scss */
-.article-title {
-  font-size: 18px;
-}
-
-/* line 9, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_headings.scss */
-.block-title {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-
-/* line 4, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav, .pager {
-  margin-left: 0;
-  list-style: none;
-  padding-left: 0;
-}
-
-/* line 11, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline > .nav-item {
-  display: inline;
-}
-/* line 14, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline > .nav-item > .nav-link {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+/* line 131, ../sass/global/_forms.scss */
+#user-register-form .form-radios > .form-item,
+#user-login .form-radios > .form-item,
+#user-pass .form-radios > .form-item,
+#contact-site-form .form-radios > .form-item {
+  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-}
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.nav-inline > .nav-item > .nav-link {
+  zoom: 1;
   *display: inline;
+  padding-left: 0;
+  margin-top: 0;
+}
+/* line 136, ../sass/global/_forms.scss */
+#user-register-form .form-radios > .form-item > label,
+#user-login .form-radios > .form-item > label,
+#user-pass .form-radios > .form-item > label,
+#contact-site-form .form-radios > .form-item > label {
+  display: inline !important;
+  float: none;
+  margin: 0 24px 0 0;
+  width: auto;
+}
+/* line 143, ../sass/global/_forms.scss */
+#user-register-form .form-radios > .form-item > .form-radio,
+#user-login .form-radios > .form-item > .form-radio,
+#user-pass .form-radios > .form-item > .form-radio,
+#contact-site-form .form-radios > .form-item > .form-radio {
+  display: inline;
+  margin: 0 2px;
 }
 
-/* line 25, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs,
-.nav-pills {
-  overflow: hidden;
-  *zoom: 1;
+/* line 160, ../sass/global/_forms.scss */
+.page-user .page-title,
+.page-contact .page-title {
+  padding-left: 252px;
 }
 
-/* line 30, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs > li,
-.nav-pills > li {
-  float: left;
+/* line 13, ../sass/global/_tables.scss */
+table {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 0.85714em;
 }
 
-/* line 35, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs > li > a,
-.nav-pills > li > a {
-  display: block;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 4px;
+/* line 21, ../sass/global/_tables.scss */
+thead {
+  text-align: left;
+}
+/* line 24, ../sass/global/_tables.scss */
+thead th {
+  vertical-align: bottom;
 }
 
-/* line 46, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs {
-  border-bottom: 1px solid #ddd;
+/* line 33, ../sass/global/_tables.scss */
+th,
+td {
+  padding: 8px;
+  vertical-align: top;
+  border-top: 1px solid #c3c7cc;
 }
 
-/* line 51, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs > li {
-  margin-bottom: -1px;
+/* line 45, ../sass/global/_tables.scss */
+caption + thead tr:first-child th,
+caption + thead tr:first-child td,
+colgroup + thead tr:first-child th,
+colgroup + thead tr:first-child td,
+thead:first-child tr:first-child th,
+thead:first-child tr:first-child td {
+  border-top: 0;
 }
 
-/* line 56, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs > li > a {
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  -ms-border-top-left-radius: 4px;
-  -o-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  -ms-border-top-right-radius: 4px;
-  -o-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  border-top-style: solid;
-  border-top-width: 0.063em;
-  padding-top: 0.313em;
-  border-bottom-style: solid;
-  border-bottom-width: 0.063em;
-  padding-bottom: 0.313em;
-  -webkit-box-shadow: white 0 1px 2px 0 inset;
-  -moz-box-shadow: white 0 1px 2px 0 inset;
-  box-shadow: white 0 1px 2px 0 inset;
-  border: 1px solid #e9eaec;
+/* line 50, ../sass/global/_tables.scss */
+tbody + tbody {
+  border-top: 2px solid #c3c7cc;
+}
+
+/* line 59, ../sass/global/_tables.scss */
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+
+/* line 67, ../sass/global/_tables.scss */
+tr.odd {
   background-color: #f0f1f2;
 }
-/* line 64, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs > li > a:hover {
-  border-color: #ececec #ececec white;
+
+/* line 68, ../sass/global/_tables.scss */
+tr.even {
+  background-color: transparent;
 }
 
-/* line 71, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-tabs > .active > a,
-.nav-tabs > .active > a:hover {
-  color: #c3c7cc;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-bottom-color: transparent;
-  cursor: default;
-}
-
-/* line 84, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked > .nav-item {
-  float: none;
-}
-
-/* line 88, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked > .nav-item > .nav-link {
-  display: block;
-  padding: 0.75em 12px;
-  margin-right: 0;
-}
-/* line 93, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked > .nav-item > .nav-link.active {
-  font-weight: bold;
-}
-
-/* line 102, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked.nav-buttons {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #C3C7CC;
-}
-/* line 106, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked.nav-buttons > .nav-item {
-  border-bottom: 1px solid #E1E3E6;
-}
-/* line 109, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked.nav-buttons > .nav-item.last {
-  border-bottom: none;
-}
-/* line 113, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked.nav-buttons > .nav-item > .nav-link {
-  font-size: 0.75em;
-  line-height: 2em;
-  padding: 0.375em 12px;
-}
-/* line 117, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked.nav-buttons > .nav-item > .nav-link:hover {
-  background-color: #F0F1F2;
-}
-/* line 122, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-stacked.nav-buttons > .nav-item > .nav-link:active, .nav-stacked.nav-buttons > .nav-item > .nav-link.active {
-  background-color: #424c5e;
-  color: white;
-}
-
-/* line 133, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline.nav-buttons {
-  overflow: hidden;
+/* line 11, ../sass/global/_layout.scss */
+.page-width {
+  *position: relative;
   *zoom: 1;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ececec), color-stop(100%, #424c5e));
-  background-image: -webkit-linear-gradient(top, #ececec, #424c5e);
-  background-image: -moz-linear-gradient(top, #ececec, #424c5e);
-  background-image: -o-linear-gradient(top, #ececec, #424c5e);
-  background-image: -ms-linear-gradient(top, #ececec, #424c5e);
-  background-image: linear-gradient(top, #ececec, #424c5e);
-  display: none;
-  float: left;
-  margin: 0;
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
-  border-right: #c3c7cc 1px solid;
-  border-left: #ececec 1px solid;
+  padding: 0 12px;
 }
-@media screen and (min-width:  768px) {
-  /* line 133, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-  .nav-inline.nav-buttons {
-    display: block;
+/* line 52, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.page-width:before, .page-width:after {
+  content: "";
+  display: table;
+}
+/* line 56, ../../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
+.page-width:after {
+  clear: both;
+}
+@media (min-width: 1080px) {
+  /* line 11, ../sass/global/_layout.scss */
+  .page-width {
+    width: 1104px;
+    margin: 0 auto;
   }
 }
-/* line 149, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline.nav-buttons .nav-item {
-  float: left;
-  margin-right: 0;
+
+/* line 26, ../sass/global/_layout.scss */
+.one-sidebar #sidebar-first,
+.one-sidebar #sidebar-second {
+  clear: left;
+  padding-top: 1.28571em;
 }
-/* line 154, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline.nav-buttons .nav-link {
-  text-shadow: rgba(66, 76, 94, 0.6) 0px 1px 1px;
-  height: 20px;
-  border-right: #f0f1f2 1px solid;
-  border-left: #e9eaec 1px solid;
-  padding: 14px 18px;
-  margin: 0;
-  color: white;
-  font-weight: bold;
-}
-@media screen and (min-width:  992px) {
-  /* line 154, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-  .nav-inline.nav-buttons .nav-link {
-    padding: 14px 24px;
+@media (min-width: 768px) {
+  /* line 33, ../sass/global/_layout.scss */
+  .one-sidebar.sidebar-first #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 33.33333%;
+    margin-right: -100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+  }
+  /* line 37, ../sass/global/_layout.scss */
+  .one-sidebar.sidebar-first #sidebar-first {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    clear: none;
+    padding-top: 0;
   }
 }
-/* line 168, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline.nav-buttons .nav-link:hover {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f1f2), color-stop(100%, #e9eaec));
-  background-image: -webkit-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: -moz-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: -o-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: -ms-linear-gradient(top, #f0f1f2, #e9eaec);
-  background-image: linear-gradient(top, #f0f1f2, #e9eaec);
+@media (min-width: 768px) {
+  /* line 47, ../sass/global/_layout.scss */
+  .one-sidebar.sidebar-second #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+  }
+  /* line 51, ../sass/global/_layout.scss */
+  .one-sidebar.sidebar-second #sidebar-first {
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    clear: none;
+    padding-top: 0;
+  }
 }
-/* line 174, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/global/_navigation.scss */
-.nav-inline.nav-buttons .nav-link:active, .nav-inline.nav-buttons .nav-link.active, .nav-inline.nav-buttons .nav-link.active-trail {
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #ececec), color-stop(100%, #c3c7cc));
-  background-image: -webkit-linear-gradient(bottom, #ececec, #c3c7cc);
-  background-image: -moz-linear-gradient(bottom, #ececec, #c3c7cc);
-  background-image: -o-linear-gradient(bottom, #ececec, #c3c7cc);
-  background-image: -ms-linear-gradient(bottom, #ececec, #c3c7cc);
-  background-image: linear-gradient(bottom, #ececec, #c3c7cc);
-  border-right: #424c5e 1px solid;
-  border-left: #424c5e 1px solid;
+
+/* line 63, ../sass/global/_layout.scss */
+.two-sidebars #sidebar-second {
+  clear: left;
+  padding-top: 1.28571em;
+}
+@media (min-width: 768px) {
+  /* line 69, ../sass/global/_layout.scss */
+  .two-sidebars #content {
+    float: left;
+    width: 75%;
+    margin-left: 25%;
+    margin-right: -100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+  }
+  /* line 73, ../sass/global/_layout.scss */
+  .two-sidebars #sidebar-first {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: -25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    clear: none;
+    padding-top: 0;
+  }
+}
+@media (min-width: 1080px) {
+  /* line 81, ../sass/global/_layout.scss */
+  .two-sidebars #content {
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: -75%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+  }
+  /* line 85, ../sass/global/_layout.scss */
+  .two-sidebars #sidebar-second {
+    float: right;
+    width: 25%;
+    margin-right: 0%;
+    margin-left: -25%;
+    padding-left: 12px;
+    padding-right: 12px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/sites/all/themes/center/boxsizing.htc");
+    clear: none;
+    padding-top: 0;
+  }
 }
 
 /*
@@ -1389,7 +1116,7 @@ input[type="week"]:focus {
  * Contributing author: Tyler Smith (@mbmufffin)
  */
 /* Browser Resets */
-/* line 17, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 17, ../sass/libraries/_flexslider.scss */
 .flex-container a:active,
 .flexslider a:active,
 .flex-container a:focus,
@@ -1397,7 +1124,7 @@ input[type="week"]:focus {
   outline: none;
 }
 
-/* line 20, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 20, ../sass/libraries/_flexslider.scss */
 .slides,
 .flex-control-nav,
 .flex-direction-nav {
@@ -1408,33 +1135,33 @@ input[type="week"]:focus {
 
 /* FlexSlider Necessary Styles
 *********************************/
-/* line 24, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 24, ../sass/libraries/_flexslider.scss */
 .flexslider {
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-/* line 25, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 25, ../sass/libraries/_flexslider.scss */
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
-/* line 26, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 26, ../sass/libraries/_flexslider.scss */
 .flexslider .slides img {
   width: 100%;
   display: block;
 }
 
-/* line 27, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 27, ../sass/libraries/_flexslider.scss */
 .flex-pauseplay span {
   text-transform: capitalize;
 }
 
 /* Clearfix for the .slides element */
-/* line 30, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 30, ../sass/libraries/_flexslider.scss */
 .slides:after {
   content: ".";
   display: block;
@@ -1444,12 +1171,12 @@ input[type="week"]:focus {
   height: 0;
 }
 
-/* line 31, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 31, ../sass/libraries/_flexslider.scss */
 html[xmlns] .slides {
   display: block;
 }
 
-/* line 32, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 32, ../sass/libraries/_flexslider.scss */
 * html .slides {
   height: 1%;
 }
@@ -1457,243 +1184,503 @@ html[xmlns] .slides {
 /* No JavaScript Fallback */
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
-/* line 37, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/libraries/_flexslider.scss */
+/* line 37, ../sass/libraries/_flexslider.scss */
 .no-js .slides > li:first-child {
   display: block;
 }
 
-/* line 9, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_pages.scss */
-.page-width {
-  *position: relative;
-  *zoom: 1;
-  padding: 0 12px;
-}
-/* line 52, /Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-.page-width:before, .page-width:after {
-  content: "";
-  display: table;
-}
-/* line 56, /Library/Ruby/Gems/1.8/gems/zen-grids-1.2/stylesheets/zen/_grids.scss */
-.page-width:after {
-  clear: both;
-}
-@media screen and (min-width:  1080px) {
-  /* line 9, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_pages.scss */
-  .page-width {
-    width: 1080px;
-    margin: 0 auto;
-  }
+/* line 7, ../sass/elements/_buttons.scss */
+.button-primary, .views-submit-button > .form-submit {
+  margin-bottom: 0.42857em;
 }
 
-/* line 23, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_pages.scss */
-.one-sidebar #sidebar-first {
-  clear: left;
-  padding-top: 2.25em;
-}
-@media screen and (min-width:  768px) {
-  /* line 29, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_pages.scss */
-  .one-sidebar #content {
-    float: left;
-    width: 66.667%;
-    margin-left: 33.333%;
-    margin-right: -100%;
-    padding-left: 6px;
-    padding-right: 6px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
-  }
-  /* line 33, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_pages.scss */
-  .one-sidebar #sidebar-first {
-    float: left;
-    width: 25%;
-    margin-left: 0%;
-    margin-right: -25%;
-    padding-left: 6px;
-    padding-right: 6px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    *behavior: url("/sites/all/themes/center/boxsizing.htc");
-    clear: none;
-    padding-top: 0;
-  }
+/* line 7, ../sass/elements/_fields.scss */
+.field-label {
+  font-size: 0.85714em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: #424c5e;
 }
 
-/* line 8, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_regions.scss */
-#above-content {
-  padding-top: 1.5em;
+/* line 19, ../sass/elements/_fields.scss */
+.read-more:after,
+.node-link a:after {
+  background-position: 0 -36px;
+  margin-right: -4px;
 }
 
-/* line 13, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_regions.scss */
-#main-content {
-  padding: 2.25em 0;
+/* line 7, ../sass/elements/_headings.scss */
+.page-title {
+  margin-bottom: 0.66667em;
 }
 
-/* line 17, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/layout/_regions.scss */
-#content {
-  position: relative;
+/* line 12, ../sass/elements/_headings.scss */
+.article-title {
+  margin: 0 0 0.375em;
+  font-size: 1.14286em;
+  line-height: 1.125em;
+  font-family: "Droid Serif", Georgia, serif;
+  font-weight: bold;
 }
 
-/* line 5, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_messages.scss */
-#messages {
-  *zoom: 1;
-  background-color: white;
-  border-bottom: solid 1px #e9eaec;
-  font-weight: 600;
-  padding: 0.75em 12px 0;
+/* line 20, ../sass/elements/_headings.scss */
+.block-title {
+  font-size: 1.07143em;
+  line-height: 1.6em;
+  margin-bottom: 1.6em;
+  color: #68707e;
+  font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+  text-transform: uppercase;
 }
-/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#messages:after {
-  content: "\0020";
+
+/* line 7, ../sass/elements/_lists.scss */
+.article-list {
+  padding: 0;
+  border-bottom: 1px solid #d2d5d9;
+}
+
+/* line 12, ../sass/elements/_lists.scss */
+.article-item {
+  border-top-style: solid;
+  border-top-width: 0.07143em;
+  padding-top: 0.78571em;
+  padding-bottom: 0.85714em;
   display: block;
-  height: 0;
-  clear: both;
-  overflow: hidden;
-  visibility: hidden;
+  border-color: #d2d5d9;
 }
 
-/* line 13, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_messages.scss */
+/* line 27, ../sass/elements/_lists.scss */
+.no-bullets {
+  margin: 0;
+  padding: 0;
+}
+/* line 31, ../sass/elements/_lists.scss */
+.no-bullets > li {
+  list-style: none;
+}
+
+/* line 6, ../sass/elements/_meta.scss */
+.meta {
+  font-size: 0.92857em;
+  line-height: 1.38462em;
+}
+
+/* line 4, ../sass/elements/_navigation.scss */
+.nav, .pager, #styleguide-header ul {
+  margin-left: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 11, ../sass/elements/_navigation.scss */
+.nav-inline > li {
+  display: inline;
+}
+/* line 14, ../sass/elements/_navigation.scss */
+.nav-inline > li > a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+/* line 25, ../sass/elements/_navigation.scss */
+.nav-tabs,
+.nav-pills {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 30, ../sass/elements/_navigation.scss */
+.nav-tabs > li,
+.nav-pills > li {
+  float: left;
+}
+
+/* line 35, ../sass/elements/_navigation.scss */
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  display: block;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 4px;
+}
+
+/* line 46, ../sass/elements/_navigation.scss */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 51, ../sass/elements/_navigation.scss */
+.nav-tabs > li {
+  margin-bottom: -1px;
+}
+
+/* line 56, ../sass/elements/_navigation.scss */
+.nav-tabs > li > a {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-top-style: solid;
+  border-top-width: 0.07143em;
+  padding-top: 0.14286em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.07143em;
+  padding-bottom: 0.14286em;
+  -webkit-box-shadow: white 1px 1px 1px 0 inset;
+  -moz-box-shadow: white 1px 1px 1px 0 inset;
+  box-shadow: white 1px 1px 1px 0 inset;
+  border: 1px solid #e1e3e6;
+  background-color: #f0f1f2;
+  color: #a5aab2;
+}
+/* line 65, ../sass/elements/_navigation.scss */
+.nav-tabs > li > a:hover {
+  border-color: #c3c7cc #c3c7cc white;
+}
+
+/* line 72, ../sass/elements/_navigation.scss */
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  color: #424c5e;
+  background-color: #e1e3e6;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+
+/* line 80, ../sass/elements/_navigation.scss */
+.nav-tabs.nav-stacked {
+  border-bottom: none;
+}
+/* line 83, ../sass/elements/_navigation.scss */
+.nav-tabs.nav-stacked > li {
+  margin-bottom: 0;
+}
+/* line 87, ../sass/elements/_navigation.scss */
+.nav-tabs.nav-stacked > li > a {
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -webkit-box-shadow: white 1px 1px 1px 0 inset, rgba(104, 112, 126, 0.2) -1px 0 0 0 inset;
+  -moz-box-shadow: white 1px 1px 1px 0 inset, rgba(104, 112, 126, 0.2) -1px 0 0 0 inset;
+  box-shadow: white 1px 1px 1px 0 inset, rgba(104, 112, 126, 0.2) -1px 0 0 0 inset;
+  border-right-color: #f0f1f2;
+  margin-left: -2px;
+}
+/* line 97, ../sass/elements/_navigation.scss */
+.nav-tabs.nav-stacked > li > a:hover {
+  border-color: #c3c7cc white #c3c7cc #c3c7cc;
+}
+/* line 103, ../sass/elements/_navigation.scss */
+.nav-tabs.nav-stacked > .active > a,
+.nav-tabs.nav-stacked > .active > a:hover {
+  -webkit-box-shadow: white 1px 1px 1px 0 inset;
+  -moz-box-shadow: white 1px 1px 1px 0 inset;
+  box-shadow: white 1px 1px 1px 0 inset;
+  margin-right: -1px;
+  border-right-color: transparent;
+  border-bottom-color: #ddd;
+}
+
+/* line 118, ../sass/elements/_navigation.scss */
+.nav-stacked > li {
+  float: none;
+}
+
+/* line 122, ../sass/elements/_navigation.scss */
+.nav-stacked > li > a {
+  display: block;
+  padding: 0.42857em 12px;
+  margin-right: 0;
+}
+/* line 127, ../sass/elements/_navigation.scss */
+.nav-stacked > li > a.active {
+  font-weight: bold;
+}
+
+/* line 136, ../sass/elements/_navigation.scss */
+.nav-stacked.nav-buttons {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #c3c7cc;
+}
+/* line 140, ../sass/elements/_navigation.scss */
+.nav-stacked.nav-buttons > li {
+  border-bottom: 1px solid #c3c7cc;
+}
+/* line 143, ../sass/elements/_navigation.scss */
+.nav-stacked.nav-buttons > li.last {
+  border-bottom: none;
+}
+/* line 147, ../sass/elements/_navigation.scss */
+.nav-stacked.nav-buttons > li > a {
+  font-size: 0.85714em;
+  line-height: 1.5em;
+  padding: 0.21429em 12px;
+  color: #e55c16;
+}
+/* line 152, ../sass/elements/_navigation.scss */
+.nav-stacked.nav-buttons > li > a:hover {
+  background-color: #fdf6e9;
+}
+/* line 157, ../sass/elements/_navigation.scss */
+.nav-stacked.nav-buttons > li > a:active, .nav-stacked.nav-buttons > li > a.active {
+  background-color: #f27b25;
+  color: white;
+}
+
+/* line 168, ../sass/elements/_navigation.scss */
+.nav-inline.nav-buttons {
+  overflow: hidden;
+  *zoom: 1;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c7cc), color-stop(100%, #68707e));
+  background-image: -webkit-linear-gradient(top, #c3c7cc, #68707e);
+  background-image: -moz-linear-gradient(top, #c3c7cc, #68707e);
+  background-image: -o-linear-gradient(top, #c3c7cc, #68707e);
+  background-image: linear-gradient(top, #c3c7cc, #68707e);
+  display: none;
+  margin: 0;
+  border-top: 1px solid #c3c7cc;
+  border-bottom: 1px solid #c3c7cc;
+  border-right: #a5aab2 1px solid;
+  border-left: #c3c7cc 1px solid;
+}
+@media (min-width: 768px) {
+  /* line 168, ../sass/elements/_navigation.scss */
+  .nav-inline.nav-buttons {
+    display: block;
+  }
+}
+/* line 183, ../sass/elements/_navigation.scss */
+.nav-inline.nav-buttons > li {
+  float: left;
+  margin-right: 0;
+}
+/* line 188, ../sass/elements/_navigation.scss */
+.nav-inline.nav-buttons > li > a {
+  text-shadow: 0px 1px 1px rgba(104, 112, 126, 0.6);
+  height: 20px;
+  border-right: #f0f1f2 1px solid;
+  border-left: #e1e3e6 1px solid;
+  padding: 14px 18px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  /* line 188, ../sass/elements/_navigation.scss */
+  .nav-inline.nav-buttons > li > a {
+    padding: 14px 24px;
+  }
+}
+/* line 202, ../sass/elements/_navigation.scss */
+.nav-inline.nav-buttons > li > a:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f1f2), color-stop(100%, #e1e3e6));
+  background-image: -webkit-linear-gradient(top, #f0f1f2, #e1e3e6);
+  background-image: -moz-linear-gradient(top, #f0f1f2, #e1e3e6);
+  background-image: -o-linear-gradient(top, #f0f1f2, #e1e3e6);
+  background-image: linear-gradient(top, #f0f1f2, #e1e3e6);
+}
+/* line 208, ../sass/elements/_navigation.scss */
+.nav-inline.nav-buttons > li > a:active, .nav-inline.nav-buttons > li > a.active, .nav-inline.nav-buttons > li > a.active-trail {
+  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #c3c7cc), color-stop(100%, #a5aab2));
+  background-image: -webkit-linear-gradient(bottom, #c3c7cc, #a5aab2);
+  background-image: -moz-linear-gradient(bottom, #c3c7cc, #a5aab2);
+  background-image: -o-linear-gradient(bottom, #c3c7cc, #a5aab2);
+  background-image: linear-gradient(bottom, #c3c7cc, #a5aab2);
+  border-right: #68707e 1px solid;
+  border-left: #68707e 1px solid;
+}
+
+/* line 216, ../sass/elements/_navigation.scss */
+#tabs {
+  margin-bottom: 1.71429em;
+}
+
+/* line 7, ../sass/components/_footer.scss */
+#footer {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 1.71429em 0;
+}
+
+/* line 7, ../sass/components/_header.scss */
+#header {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 2.14286em 0;
+}
+
+/* line 13, ../sass/components/_header.scss */
+#branding {
+  float: left;
+}
+
+/* line 7, ../sass/components/_main.scss */
+#main {
+  background-color: white;
+}
+
+/* line 12, ../sass/components/_main.scss */
+#above-content {
+  padding-top: 0.85714em;
+}
+
+/* line 17, ../sass/components/_main.scss */
+#main-content {
+  padding: 0.85714em 0;
+}
+
+/* line 7, ../sass/components/_messages.scss */
+#messages {
+  overflow: hidden;
+  *zoom: 1;
+  font-weight: 600;
+  padding: 1.71429em 12px 0.42857em;
+}
+
+/* line 14, ../sass/components/_messages.scss */
 .messages {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  margin-bottom: 0.75em;
-  padding: 0.75em 12px;
+  margin-bottom: 0.42857em;
+  padding: 0.42857em 12px;
   color: white;
 }
-/* line 19, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_messages.scss */
+/* line 20, ../sass/components/_messages.scss */
 .messages a {
   color: white;
   font-weight: bold;
 }
 
-/* line 25, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_messages.scss */
+/* line 26, ../sass/components/_messages.scss */
 .error {
   background-color: #b52847;
 }
 
-/* line 26, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_messages.scss */
+/* line 27, ../sass/components/_messages.scss */
 .warning {
-  background-color: #ef5c0b;
+  background-color: #f27b25;
 }
 
-/* line 27, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_messages.scss */
+/* line 28, ../sass/components/_messages.scss */
 .status {
   background-color: #9cc524;
 }
 
-/* line 6, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_pager.scss */
+/* line 7, ../sass/components/_pager.scss */
 .pager {
   font-family: "Droid Serif", Georgia, serif;
   font-weight: bold;
   text-align: center;
   padding-left: 0;
-  margin-bottom: 2.25em;
+  margin-bottom: 0.85714em;
 }
 
-/* line 19, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_pager.scss */
+/* line 21, ../sass/components/_pager.scss */
 .pager-first,
 .pager-previous,
 .pager-item,
 .pager-next,
 .pager-last {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-}
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.pager-first,
-.pager-previous,
-.pager-item,
-.pager-next,
-.pager-last {
+  zoom: 1;
   *display: inline;
 }
-/* line 22, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_pager.scss */
+/* line 24, ../sass/components/_pager.scss */
 .pager-first > a,
 .pager-previous > a,
 .pager-item > a,
 .pager-next > a,
 .pager-last > a {
-  font-size: 0.688em;
-  line-height: 2.182em;
+  font-size: 0.85714em;
+  line-height: 1.5em;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  color: #265380;
-  background-color: #e9eaec;
+  color: #68707e;
+  background-color: #e1e3e6;
   padding: 2px 8px;
-  margin: 1.091em 2px;
+  margin: 0.5em 2px;
 }
-/* line 30, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_pager.scss */
+/* line 32, ../sass/components/_pager.scss */
 .pager-first > a:hover,
 .pager-previous > a:hover,
 .pager-item > a:hover,
 .pager-next > a:hover,
 .pager-last > a:hover {
   color: white;
-  background-color: #265380;
+  background-color: #68707e;
 }
 
-/* line 37, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_pager.scss */
+/* line 39, ../sass/components/_pager.scss */
 .pager-ellipsis {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-}
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.pager-ellipsis {
+  zoom: 1;
   *display: inline;
 }
 
-/* line 41, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_pager.scss */
+/* line 43, ../sass/components/_pager.scss */
 .pager-current {
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  font-size: 0.688em;
-  line-height: 2.182em;
+  font-size: 0.85714em;
+  line-height: 1.5em;
   color: white;
-  background-color: #ccffff;
+  background-color: #c3c7cc;
   padding: 0 8px;
-  margin: 1.091em 2px;
-}
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-.pager-current {
-  *display: inline;
+  margin: 0.5em 2px;
 }
 
-/* line 1, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_search.scss */
+/* line 7, ../sass/components/_search.scss */
 #block-search-form {
   float: right;
+  padding-top: 0.42857em;
 }
-/* line 4, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_search.scss */
+/* line 11, ../sass/components/_search.scss */
 #block-search-form > .block-content {
   margin-right: 24px;
 }
-@media screen and (min-width:  600px) {
-  /* line 4, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_search.scss */
+@media (min-width: 600px) {
+  /* line 11, ../sass/components/_search.scss */
   #block-search-form > .block-content {
     position: relative;
     right: -12px;
@@ -1701,80 +1688,118 @@ html[xmlns] .slides {
     margin-left: -12px;
   }
 }
-/* line 15, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_search.scss */
+/* line 22, ../sass/components/_search.scss */
 #block-search-form label {
   display: inline;
   float: left;
-  font-size: 0.75em;
-  line-height: 2em;
+  font-size: 0.85714em;
+  line-height: 1em;
   text-shadow: white 0 1px 1px;
   font-weight: 700;
   margin: 0 20px 0 0;
   text-transform: uppercase;
 }
-/* line 24, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_search.scss */
+/* line 31, ../sass/components/_search.scss */
 #block-search-form .form-text {
   display: inline;
   float: left;
   -moz-border-radius-topleft: 12px;
   -webkit-border-top-left-radius: 12px;
-  -ms-border-top-left-radius: 12px;
-  -o-border-top-left-radius: 12px;
   border-top-left-radius: 12px;
   -moz-border-radius-bottomleft: 12px;
   -webkit-border-bottom-left-radius: 12px;
-  -ms-border-bottom-left-radius: 12px;
-  -o-border-bottom-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  font-size: 0.85714em;
+  line-height: 1.5em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0 inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0 inset;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0 0 inset;
-  height: 24px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
   width: 130px;
   background-color: white;
   border: none;
-  border-top: solid 1px #AAAFB7;
-  color: #424c5e;
-  padding: 0 5px 0 10px;
+  color: #68707e;
+  padding: 2px 5px 2px 10px;
 }
-/* line 37, /Users/johnferris/Documents/Drupal/Themes/center/STARTERKIT/sass/components/_search.scss */
+/* line 44, ../sass/components/_search.scss */
 #block-search-form input[type="submit"] {
   display: inline;
   float: left;
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
-  -ms-border-top-left-radius: 0;
-  -o-border-top-left-radius: 0;
   border-top-left-radius: 0;
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
-  -ms-border-bottom-left-radius: 0;
-  -o-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
   -moz-border-radius-topright: 12px;
   -webkit-border-top-right-radius: 12px;
-  -ms-border-top-right-radius: 12px;
-  -o-border-top-right-radius: 12px;
   border-top-right-radius: 12px;
   -moz-border-radius-bottomright: 12px;
   -webkit-border-bottom-right-radius: 12px;
-  -ms-border-bottom-right-radius: 12px;
-  -o-border-bottom-right-radius: 12px;
   border-bottom-right-radius: 12px;
-  font-size: 0.75em;
-  line-height: 2em;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
+  font-size: 0.85714em;
+  line-height: 1.5em;
+  display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
-  text-shadow: none;
+  zoom: 1;
+  *display: inline;
   padding: 2px 10px;
   margin: 0 0 0 -1px;
-  height: 26px;
-  border-width: 1px;
+  border: none;
 }
-/* line 7, /Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#block-search-form input[type="submit"] {
-  *display: inline;
+
+/* line 7, ../sass/components/_styleguide.scss */
+.page-admin-appearance-styleguide #block-system-main {
+  padding-left: 30%;
+}
+
+/* line 13, ../sass/components/_styleguide.scss */
+#styleguide-header {
+  position: absolute;
+  width: 25%;
+  margin-left: -30%;
+  background-color: transparent;
+  border: none;
+}
+/* line 20, ../sass/components/_styleguide.scss */
+#styleguide-header .item-list {
+  float: none;
+  width: 100%;
+}
+/* line 25, ../sass/components/_styleguide.scss */
+#styleguide-header h3 {
+  font-size: 0.85714em;
+  line-height: 1.5em;
+  margin: 0;
+}
+/* line 30, ../sass/components/_styleguide.scss */
+#styleguide-header ul {
+  margin: 0 0 0.42857em;
+}
+/* line 35, ../sass/components/_styleguide.scss */
+#styleguide-header a {
+  font-size: 0.92857em;
+  line-height: 1.38462em;
+  display: block;
+  padding: 2px 12px;
+}
+
+/* line 44, ../sass/components/_styleguide.scss */
+h2.styleguide {
+  font-size: 1.07143em;
+  line-height: 1.6em;
+  margin: 0.8em 0 0;
+}
+
+/* line 49, ../sass/components/_styleguide.scss */
+div.styleguide {
+  padding: 0.85714em 0;
+  border-bottom: none;
 }

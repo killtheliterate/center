@@ -1,15 +1,16 @@
 //
 // @file
-// Drupal message styles.
+// Drupal Message styles.
+// ----------------------------------------------------------------------------
 
+// Messages region
 #messages {
-  @include legacy-pie-clearfix;
-  background-color: $white;
-  border-bottom: solid 1px $gray-lightest;
+  @include clearfix;
   font-weight: 600;
-  padding: rhythm(1) $w-gutter-half 0;
+  padding: rhythm(4) $w-gutter-half rhythm(1);
 }
 
+// Individual messages
 .messages {
 	@include border-radius(4px);
 	margin-bottom: rhythm(1);

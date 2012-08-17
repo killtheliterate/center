@@ -12,40 +12,43 @@
 
 //  Partials - Variables, functions and mixins specific to SASS
 @import "icon/*.png";     // Compass sprite support
+@import "partials/blend-mode";
 @import "partials/functions";
 @import "partials/mixins";
 @import "partials/extends";
+@import "partials/buttons";
 
 //  Global - Generalized global styles
 @import "global/normalize";
 @import "global/base";
-@import "global/tables";
-@import "global/buttons";
-@import "global/forms";
-@import "global/lists";
 @import "global/images";
-@import "global/headings";
-@import "global/fields";
-@import "global/navigation";
+@import "global/forms";
+@import "global/tables";
+@import "global/layout";
 
 //  Libraries - Modified 3rd party CSS
 @import "libraries/flexslider";
 
-//  Layout - Styles specific to layout
-@import "layout/pages";
-@import "layout/regions";
-@import "layout/modes";
+//  Elements - Styles specific to elements
+@import "elements/buttons";
+@import "elements/fields";
+@import "elements/headings";
+@import "elements/lists";
+@import "elements/meta";
+@import "elements/navigation";
 
-//  Components - Styles specific individual components
-@import "components/messages";
-@import "components/header";
-@import "components/footer";
+//  Components - Styles specific to components
+@import "components/above-content";
 @import "components/blocks";
+@import "components/comments";
+@import "components/footer";
+@import "components/header";
+@import "components/main";
+@import "components/marquee";
+@import "components/messages";
 @import "components/modes";
-@import "components/types";
 @import "components/pager";
 @import "components/search";
-@import "components/comments";
-@import "components/meta";
-@import "components/marquee";
 @import "components/styleguide";
+@import "components/types";
+@import "components/views";

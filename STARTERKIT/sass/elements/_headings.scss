@@ -1,0 +1,26 @@
+//
+// @file
+// Heading and title styles.
+// ----------------------------------------------------------------------------
+
+// Page titles
+.page-title {
+  margin-bottom: rhythm(4, $fs-xxxxl);
+}
+
+// Article title (non-full-display node titles )
+.article-title {
+  margin: 0 0 rhythm(1, $fs-xl);
+  @include adjust-font-size-to($fs-xl, 3);
+  font-family: $secondary-typeface;
+  font-weight: bold;
+}
+
+// Block title
+.block-title {
+  @include adjust-font-size-to($fs-l);
+  margin-bottom: rhythm(4, $fs-l);
+  color: $gray-dark;
+  font-family: $primary-typeface;
+  text-transform: uppercase;
+}

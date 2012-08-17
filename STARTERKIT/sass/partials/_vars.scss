@@ -1,6 +1,7 @@
 //
 // @file
 // Variables for use throughout this compass project.
+//-----------------------------------------------------------------------------
 
 
 // IE Support
@@ -29,20 +30,25 @@ $legacy-support-for-ie7: true; // Overrides default set in Support partial.
 $white:             #ffffff;
 $black:             #000000;
 
-$gray-white:        #F0F1F2;
-$gray-lightest:     #e9eaec;
-$gray-lighter:      #E5E5E5;
-$gray-light:        #ECECEC;
-$gray:              #C3C7CC;
-$gray-dark:         #424c5e;
-$gray-darker:       #291511;
-$gray-darkest:      #282425;
+$gray-white:        #f0f1f2;
+$gray-lightest:     #e1e3e6;
+$gray-lighter:      #d2d5d9;
+$gray-light:        #c3c7cc;
+$gray:              #a5aab2;
+$gray-dark:         #68707e;
+$gray-darker:       #424c5e;
+$gray-darkest:      #182643;
 $gray-black:        #181818;
 
 $red:               #b52847;
 $red-dark:          #95223C;
 
-$orange:            #ef5c0b;
+$orange-white:      #fdf6e9;
+$orange-lightest:   #fff0d1;
+$orange-lighter:    #ffe7b7;
+$orange-light:      #ff9933;
+$orange:            #f27b25;
+$orange-dark:       #e55c16;
 
 $green-lighter:     #b1d233;
 $green:             #9cc524;
@@ -52,18 +58,29 @@ $green-darkest:     #5e9a08;
 
 $blue-white:        #ecf3f7;
 $blue-lightest:     #c9e7f6;
-$blue-lighter:      #c9e7f6;
-$blue-light:        #ccffff;
-$blue:              #33679a;
-$blue-dark:         #265380;
-$blue-darker:       #193d61;
+$blue-lighter:      #93ceed;
+$blue-light:        #629cdb;
+$blue:              #4168b6;
+$blue-dark:         #314e88;
+$blue-darker:       #254590;
 $blue-darkest:      #0f2840;
 $blue-black:        #091827;
 
+$royal-white:        #ecf3f7;
+$royal-lightest:     #c9e7f6;
+$royal-lighter:      #93ceed;
+$royal-light:        #629cdb;
+$royal:              #4168b6;
+$royal-dark:         #314e88;
+$royal-darker:       #254590;
+$royal-darkest:      #0f2840;
+$royal-black:        #091827;
+
 $primary-color:     $gray-dark;       // Default body copy color
-$secondary-color:   $blue;            // Default link color
-$accent-color:      $green;           // Default heading color
+$secondary-color:   $blue-darker;     // Default link color
+$accent-color:      $orange-dark;     // Default heading color
 $warning-color:     $red;             // Default error and required color
+$border-color:      $gray-lighter;    // Default error and required color
 
 
 //  Typography
@@ -76,30 +93,30 @@ $tertiary-typeface:   $secondary-typeface;
 $base-font-family:    $primary-typeface;
 
 //  Font sizes
-$fs-xxs:     9px;
-$fs-xs:      11px;
-$fs-s:       12px;
-$fs-m:       13px;
-$fs-l:       14px;
-$fs-xl:      18px;
-$fs-xxl:     24px;
-$fs-xxxl:    30px;
+$fs-xxs:     11px;
+$fs-xs:      12px;
+$fs-s:       13px;
+$fs-m:       14px;
+$fs-l:       15px;
+$fs-xl:      16px;
+$fs-xxl:     18px;
+$fs-xxxl:    24px;
 $fs-xxxxl:   36px;
 $fs-xxxxxl:  50px;
 
-$h1-font-size: $fs-xxxxxl !default;
-$h2-font-size: $fs-xxl !default;
+$h1-font-size: $fs-xxxxl !default;
+$h2-font-size: $fs-xxxl !default;
 $h3-font-size: $fs-xl !default;
 $h4-font-size: $fs-m !default;
 $h5-font-size: $fs-s !default;
-$h6-font-size: $fs-xs !default;
+$h6-font-size: $fs-xxs !default;
 
 // The amount lists and blockquotes are indented.
 $indent-amount: 48px !default;
 
 // Vertical Ryhthm
-$base-font-size:    16px;        // Font-size of your body copy.
-$base-line-height:  12px;        // Setting the base-line-height half.
+$base-font-size:    14px;        // Font-size of your body copy.
+$base-line-height:  6px;         // Setting the base-line-height half.
                                  // the height of the desired body copy.
                                  // line-height helps prevent sparse.
                                  // leading at different font-sizes.
@@ -109,19 +126,19 @@ $base-line-height:  12px;        // Setting the base-line-height half.
 //-----------------------------------------------------------------------------
 
 $zen-column-count: 12;
-$zen-gutter-width: 12px;
+$zen-gutter-width: 24px;
 $box-sizing-polyfill-path: "/sites/all/themes/center/boxsizing.htc";
 
 
 //  Layout
 //-----------------------------------------------------------------------------
 
-$w-full: 1080px;
+$w-full: 1104px;
 $w-content: 620px;
 $w-sidebar: 320px;
 $w-sidebar-first: 320px;
-$w-gutter: $zen-gutter-width * 2;
-$w-gutter-half: $zen-gutter-width;
+$w-gutter: $zen-gutter-width;
+$w-gutter-half: $zen-gutter-width / 2;
 
 
 //  Breakpoints

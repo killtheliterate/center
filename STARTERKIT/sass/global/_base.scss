@@ -1,10 +1,23 @@
+//
+// @file
+// Default tag styles.
+//
+// The only class selectors allowed in this file are those intended
+// for use within the WYSIWYG editor.
+// ----------------------------------------------------------------------------
+
 // Establish Vertical rhythm.
 @include establish-baseline();
 
 html > body {
-  @include adjust-leading-to(2);
+  // Override the default line height to allow for smaller baseline heights.
+  @include adjust-leading-to(3);
   color: $primary-color;
   font-family: $primary-typeface;
+}
+
+body.html {
+  background-color: $gray-white;
 }
 
 // Headings
@@ -13,36 +26,40 @@ html > body {
 h1 {
   @include adjust-font-size-to($h1-font-size);
   @include rhythm(0, 0, 0, 1, $h1-font-size);
-  font-family: $primary-typeface;
+  color: $accent-color;
 }
 
 h2 {
   @include adjust-font-size-to($h2-font-size, 3);
   @include rhythm(0, 0, 0, 1, $h2-font-size);
+  color: $accent-color;
+  font-family: $secondary-typeface;
 }
 
 h3 {
   @include adjust-font-size-to($h3-font-size);
   @include rhythm(2, 0, 0, 2, $h3-font-size);
   font-family: $secondary-typeface;
-  font-weight: normal;
+  color: $accent-color;
 }
 
 h4 {
   @include adjust-font-size-to($h4-font-size);
   @include rhythm(4, 0, 0, 0, $h4-font-size);
-  text-transform: uppercase;
+  font-family: $secondary-typeface;
+  color: $accent-color;
 }
 
 h5 {
   @include adjust-font-size-to($h5-font-size);
   @include rhythm(4, 0, 0, 0, $h5-font-size);
-  font-weight: normal;
 }
 
 h6 {
   @include adjust-font-size-to($h6-font-size);
   @include rhythm(4, 0, 0, 0, $h6-font-size);
+  letter-spacing: .03em;
+  text-transform: uppercase;
 }
 
 

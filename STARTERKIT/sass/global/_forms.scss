@@ -1,5 +1,8 @@
-//  Global
-// ---------------------
+//
+// @file
+// Global form styles.
+//
+// ----------------------------------------------------------------------------
 
 button:focus,
 input:focus,
@@ -17,7 +20,7 @@ textarea:focus {
 
 label,
 fieldset-legend {
-  @include adjust-font-size-to(12px, 1);
+  @include adjust-font-size-to(12px);
   font-weight: 600;
   margin-bottom: rhythm(1, 12px);
 }
@@ -47,7 +50,8 @@ input[type="url"],
 input[type="week"] {
   @include border-radius(3px);
   @include box-sizing(border-box);
-  padding: 2px $w-gutter-half;
+  padding: 2px;
+  margin-bottom: rhythm(1);
   max-width: 100%;
   background-color: $white;
   border: 1px $gray solid;
@@ -106,5 +110,54 @@ input[type="week"] {
 
   @include breakpoint($tablet-wide) {
     top: 0;
+  }
+}
+
+%form-layout-inline {
+  .form-item,
+  .form-actions {
+    @include clearfix;
+    padding-left: 228px + $w-gutter;
+    margin-bottom: rhythm(3);
+  }
+
+  .form-item  > label {
+    float: left;
+    width: 228px;
+    margin-left: -1 * (228px + $w-gutter);
+    text-align: right;
+  }
+
+  .form-radios > .form-item {
+    @include inline-block;
+    padding-left: 0;
+    margin-top: 0;
+
+    > label {
+      display: inline !important;
+      float: none;
+      margin: 0 $w-gutter 0 0;
+      width: auto;
+    }
+
+    > .form-radio {
+      display: inline;
+      margin: 0 2px;
+    }
+  }
+}
+
+#user-register-form,
+#user-login,
+#user-pass,
+#contact-site-form {
+  @extend %form-layout-inline;
+}
+
+// Push page titles over to match forms
+.page-user,
+.page-contact {
+  .page-title {
+    padding-left: 228px + $w-gutter;
   }
 }

@@ -1,3 +1,10 @@
 //
 // @file
-// Non-layout Footer region styles.
+// Footer region styles.
+// ----------------------------------------------------------------------------
+
+// Footer region
+#footer {
+  @include clearfix;
+  padding: rhythm(4) 0;
+}

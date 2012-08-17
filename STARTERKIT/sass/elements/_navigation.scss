@@ -8,10 +8,10 @@
 }
 
 .nav-inline {
-  > .nav-item {
+  > li {
     display: inline;
 
-    > .nav-link {
+    > a {
       @include inline-block;
     }
   }
@@ -57,9 +57,10 @@
   @include border-top-radius(4px);
   @include leading-border(1px, .5);
   @include trailing-border(1px, .5);
-  @include box-shadow($white 0 1px 2px 0 inset);
+  @include box-shadow($white 1px 1px 1px 0 inset);
   border: 1px solid $gray-lightest;
   background-color: $gray-white;
+  color: $gray;
 
   &:hover {
     border-color: $gray-light $gray-light $white;
@@ -69,11 +70,44 @@
 // Active state, and it's :hover to override normal :hover
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
-  color: $gray;
-  background-color: $white;
+  color: $gray-darker;
+  background-color: $gray-lightest;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
+}
+
+.nav-tabs.nav-stacked {
+  border-bottom: none;
+
+  > li {
+    margin-bottom: 0;
+  }
+
+  > li > a {
+    @include border-left-radius(4px);
+    @include border-right-radius(0);
+    @include box-shadow(
+      $white 1px 1px 1px 0 inset,
+      rgba($gray-dark, .2) -1px 0 0 0 inset
+    );
+    border-right-color: $gray-white;
+    margin-left: -2px;
+
+    &:hover {
+      border-color: $gray-light $white $gray-light $gray-light;
+    }
+  }
+
+  > .active > a,
+  > .active > a:hover {
+    @include box-shadow(
+      $white 1px 1px 1px 0 inset
+    );
+    margin-right: -1px;
+    border-right-color: transparent;
+    border-bottom-color: #ddd;
+  }
 }
 
 
@@ -81,11 +115,11 @@
 // -----------
 
 // Stacked tabs and pills
-.nav-stacked > .nav-item {
+.nav-stacked > li {
   float: none;
 }
 
-.nav-stacked > .nav-item > .nav-link {
+.nav-stacked > li > a {
   display: block;
   padding: rhythm(1) 12px;
   margin-right: 0; // no need for the gap between nav items
@@ -101,26 +135,27 @@
 
 .nav-stacked.nav-buttons {
   @include border-radius(3px);
-  border: 1px solid #C3C7CC;
+  border: 1px solid $gray-light;
 
-  > .nav-item {
-    border-bottom: 1px solid #E1E3E6;
+  > li {
+    border-bottom: 1px solid $gray-light;
 
     &.last {
       border-bottom: none;
     }
 
-    > .nav-link {
+    > a {
       @include adjust-font-size-to(12px);
       padding: rhythm(.5) $w-gutter-half;
+      color: $orange-dark;
 
       &:hover {
-        background-color: #F0F1F2;
+        background-color: $orange-white;
       }
 
       &:active,
       &.active {
-        background-color: $gray-dark;
+        background-color: $orange;
         color: $white;
       }
     }
@@ -131,26 +166,26 @@
 // ----------
 
 .nav-inline.nav-buttons {
-    @include clearfix;
-    @include background-image(linear-gradient(top, $gray-light $gray-dark));
-    // Hide menu on small screens.
-    display: none;
-    margin: 0;
-    border-top: 1px solid $gray-light;
-    border-bottom: 1px solid $gray-light;
-    border-right: $gray 1px solid;
-    border-left: $gray-light 1px solid;
+  @include clearfix;
+  @include background-image(linear-gradient(top, $gray-light $gray-dark));
+  // Hide menu on small screens.
+  display: none;
+  margin: 0;
+  border-top: 1px solid $gray-light;
+  border-bottom: 1px solid $gray-light;
+  border-right: $gray 1px solid;
+  border-left: $gray-light 1px solid;
 
-    @include breakpoint($tablet) {
-      display: block;
-    }
+  @include breakpoint($tablet) {
+    display: block;
+  }
 
-    .nav-item {
+  > li {
     float: left;
     margin-right: 0;
   }
 
-  .nav-link {
+  > li > a {
     @include text-shadow();
     height: 20px;
     border-right: $gray-white 1px solid;
@@ -176,4 +211,8 @@
       border-left: $gray-dark 1px solid;
     }
   }
+}
+
+#tabs {
+  margin-bottom: rhythm(4);
 }
