@@ -223,6 +223,21 @@ function center_field__minimal($variables) {
 }
 
 /**
+ * Overrides theme_ds_field_minimal().
+ * Still allow the normal drupal field classes to apply.
+ */
+function center_field__raw($variables) {
+  $output = '';
+
+  // Render the items.
+  foreach ($variables['items'] as $delta => $item) {
+    $output .= drupal_render($item);
+  }
+
+  return $output;
+}
+
+/**
  * Custom implementation of theme_field()
  * Turns multivalued fields into a comma separated list.
  * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_separated';
@@ -321,3 +336,20 @@ function center_field__custom_h3($variables) {
 /**
  * BLOCKS
  */
+
+/**
+ * BREADCRUMBS
+ */
+
+function center_breadcrumb($variables) {
+  $breadcrumb = $variables['breadcrumb'];
+
+  if (!empty($breadcrumb)) {
+    // Provide a navigational heading to give context for breadcrumb links to
+    // screen-reader users. Make the heading invisible with .element-invisible.
+    $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
+
+    $output .= '<div class="breadcrumb">' . implode(' <span class="breadcrumb-separator">/</span> ', $breadcrumb) . '</div>';
+    return $output;
+  }
+}
