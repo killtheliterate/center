@@ -1,5 +1,5 @@
 ;-------------- B A S I C   S E T T I N G S -------------
-name = RENAME_THIS
+name = Prototype
 description = Enter description here
 core = 7.x
 base theme = center
