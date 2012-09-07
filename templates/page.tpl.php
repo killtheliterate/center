@@ -22,94 +22,94 @@
           </h2>
         <?php endif; ?>
       </hgroup>
-      <?php if ($page['utility']) { ?>
+      <?php if ($page['utility']): ?>
         <div id="utility">
           <div class="container">
             <?php print render($page['utility']); ?>
           </div>
         </div>
-      <? } // end utility ?>
-      <?php if ($page['header']) { ?>
+      <?php endif; // end utility ?>
+      <?php if ($page['header']): ?>
           <?php print render($page['header']); ?>
-      <? } // end header ?>
+      <?php endif; // end header ?>
     </div>
   </div>
 
-  <?php if ($page['navigation']) { ?>
+  <?php if ($page['navigation']): ?>
     <div id="navigation" class="clearfix"><div class="page-width">
       <?php print render($page['navigation']); ?>
     </div></div>
-  <? } // end navigation?>
+  <?php endif; // end navigation?>
 
   <div id="main">
     <div class="page-width">
 
-      <?php if ($messages) { ?>
+      <?php if ($messages): ?>
         <div id="messages">
             <?php print $messages; ?>
         </div>
-      <? } // end messages ?>
+      <?php endif; // end messages ?>
 
-      <?php if ($page['above_content']) { ?>
+      <?php if ($page['above_content']): ?>
         <div id="above-content">
           <div class="container">
             <?php print render($page['above_content']); ?>
           </div>
         </div>
-      <? } // end Above Content ?>
+      <?php endif; // end Above Content ?>
 
       <div id="main-content" class="clearfix">
 
-        <?php if (render($tabs)) { ?>
+        <?php if (render($tabs)): ?>
           <div id="tabs">
             <?php print render($tabs); ?>
           </div>
-        <? } // end tabs ?>
+        <?php endif; // end tabs ?>
 
         <div id="content">
 
-          <?php if ($page['highlighted']) { ?>
+          <?php if ($page['highlighted']): ?>
             <div id="highlighted">
               <div class="container">
                 <?php print render($page['highlighted']); ?>
               </div>
             </div>
-          <? } // end highlighted ?>
+          <?php endif; // end highlighted ?>
 
-          <?php if (!$is_front && strlen($title) > 0) { ?>
+          <?php if (!$is_front && strlen($title) > 0): ?>
             <h1><?php print $title; ?></h1>
-          <? } ?>
+          <?php endif; ?>
 
-          <?php if ($page['help']) { ?>
+          <?php if ($page['help']): ?>
             <div id="help">
               <?php print render($page['help']); ?>
             </div>
-          <? } // end help ?>
+          <?php endif; // end help ?>
 
           <?php print render($page['content']); ?>
 
         </div>
 
-        <?php if ($page['sidebar_first']) { ?>
+        <?php if ($page['sidebar_first']): ?>
           <div id="sidebar-first" class="aside">
             <?php print render($page['sidebar_first']); ?>
           </div>
-        <? } // end sidebar_first ?>
+        <?php endif; // end sidebar_first ?>
 
-        <?php if ($page['sidebar_second']) { ?>
+        <?php if ($page['sidebar_second']): ?>
           <div id="sidebar-second" class="aside">
             <?php print render($page['sidebar_second']); ?>
           </div>
-        <? } // end sidebar_second ?>
+        <?php endif; // end sidebar_second ?>
       </div>
 
-      <?php if ($page['below_content']) { ?>
+      <?php if ($page['below_content']): ?>
         <div id="below-content">
           <div class="container">
             <?php print render($page['below_content']); ?>
           </div>
         </div>
-      <? } // end Below Content ?>
+      <?php endif; // end Below Content ?>
 
     </div>
   </div>
@@ -120,12 +120,12 @@
     </div>
   </div>
 
-  <?php if ($page['admin_footer']) { ?>
+  <?php if ($page['admin_footer']): ?>
     <div id="admin-footer">
       <div class="page-width">
         <?php print render($page['admin_footer']); ?>
       </div>
     </div>
-  <? } // end admin_footer ?>
+  <?php endif; // end admin_footer ?>
 
 </div>
