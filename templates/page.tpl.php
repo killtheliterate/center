@@ -1,4 +1,4 @@
-<div id="page">
+<div id="page" class="<?php print $classes; ?>">
 
   <div id="header">
     <div class="page-width">
