@@ -77,7 +77,7 @@
           <?php endif; // end highlighted ?>
 
           <?php if (!$is_front && strlen($title) > 0): ?>
-            <h1><?php print $title; ?></h1>
+            <h1 class="page-title"><?php print $title; ?></h1>
           <?php endif; ?>
 
           <?php if ($page['help']): ?>
