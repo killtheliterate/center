@@ -21,8 +21,8 @@
     color: $white;
     font-weight: bold;
   }
-}
 
-.error    { background-color: $red; }
-.warning  { background-color: $orange; }
-.status   { background-color: $green; }
+  &.error    { background-color: $red; }
+  &.warning  { background-color: $orange; }
+  &.status   { background-color: $green; }
+}
