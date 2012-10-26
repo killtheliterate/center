@@ -62,87 +62,39 @@ a:active {
 }
 
 /* line 121, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
-h1 {
-  font-size: 2.57143em;
-  line-height: 1.16667em;
-  margin-top: 0.16667em;
-  margin-bottom: 0.16667em;
-}
-
-/* line 130, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
-h2 {
-  font-size: 1.71429em;
-  line-height: 1.25em;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
-}
-
-/* line 136, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
-h3 {
-  font-size: 1.14286em;
-  line-height: 1.5em;
-  margin-top: 0.375em;
-  margin-bottom: 0.375em;
-}
-
-/* line 142, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
-h4 {
-  font-size: 1em;
-  line-height: 1.28571em;
-  margin-top: 0.42857em;
-  margin-bottom: 0.42857em;
-}
-
-/* line 148, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
-h5 {
-  font-size: 0.92857em;
-  line-height: 1.38462em;
-  margin-top: 0.46154em;
-  margin-bottom: 0.46154em;
-}
-
-/* line 154, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
-h6 {
-  font-size: 0.78571em;
-  line-height: 1.63636em;
-  margin-top: 0.54545em;
-  margin-bottom: 0.54545em;
-}
-
-/* line 164, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 173, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 130, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 177, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 134, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 blockquote {
   margin: 0.42857em 48px;
 }
 
-/* line 186, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 143, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 194, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 151, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 204, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 161, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 p,
 pre {
   margin: 0.42857em 0;
 }
 
-/* line 217, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 174, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 pre,
 code,
 kbd,
@@ -152,31 +104,31 @@ samp {
   line-height: 1.28571em;
 }
 
-/* line 229, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 186, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 242, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 199, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 q {
   quotes: none;
 }
 
-/* line 249, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 206, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 254, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 211, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 small {
   font-size: 75%;
 }
 
-/* line 264, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 221, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -185,17 +137,17 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 271, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 228, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 275, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 232, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 291, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 248, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 dl,
 menu,
 ol,
@@ -203,47 +155,47 @@ ul {
   margin: 0.42857em 0;
 }
 
-/* line 296, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 253, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 dd {
   margin: 0 0 0 48px;
 }
 
-/* line 306, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 263, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 menu,
 ol,
 ul {
   padding: 0 0 0 48px;
 }
 
-/* line 315, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 272, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
   list-style-image: none;
 }
 
-/* line 331, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 288, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 340, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 297, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 353, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 310, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 figure {
   margin: 0;
 }
 
-/* line 366, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 323, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 form {
   margin: 0;
 }
 
-/* line 374, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 331, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 fieldset {
   border-color: #c0c0c0;
   margin: 0 2px;
@@ -261,14 +213,14 @@ fieldset {
   padding-right: 0.19643em;
 }
 
-/* line 390, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 347, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
 }
 
-/* line 408, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 365, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 button,
 input,
 select,
@@ -278,13 +230,13 @@ textarea {
   vertical-align: baseline;
 }
 
-/* line 422, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 379, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 button,
 input {
   line-height: normal;
 }
 
-/* line 436, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 393, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 button,
 input[type="button"],
 input[type="reset"],
@@ -293,13 +245,13 @@ input[type="submit"] {
   -webkit-appearance: button;
 }
 
-/* line 449, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 406, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
 }
 
-/* line 461, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 418, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -308,7 +260,7 @@ input[type="radio"] {
   padding: 0;
 }
 
-/* line 475, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 432, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
@@ -316,26 +268,26 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-/* line 485, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 442, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
 
-/* line 495, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 452, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 505, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 462, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
 }
 
-/* line 519, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
+/* line 476, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -378,8 +330,8 @@ h2 {
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0.25em;
-  color: #e55c16;
   font-family: "Droid Serif", Georgia, serif;
+  color: #e55c16;
 }
 
 /* line 39, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
@@ -428,7 +380,7 @@ h6 {
   text-transform: uppercase;
 }
 
-/* line 69, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 68, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 a {
   color: #254590;
   text-decoration: none;
@@ -442,33 +394,33 @@ a:hover {
   text-decoration: underline;
 }
 
-/* line 78, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 77, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 p {
   margin: 0 0 0.85714em;
 }
 
-/* line 85, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 84, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 93, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 92, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 dl {
   margin-bottom: 1.28571em;
 }
 
-/* line 97, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 96, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 101, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 100, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 dd {
   margin-left: 24px;
 }
 
-/* line 108, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 107, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -482,7 +434,7 @@ dd {
   visibility: hidden;
 }
 
-/* line 112, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
+/* line 111, /Users/killtheliterate/Sites/public_html/sandbox.local/sites/all/themes/prototype/sass/global/_base.scss */
 .intro {
   font-size: 1.28571em;
   line-height: 1.33333em;
