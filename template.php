@@ -1,9 +1,8 @@
 <?php
 
 /**
- * Implements hook_js_alter()
+ * Implements hook_js_alter().
  */
-
 function center_js_alter(&$javascript) {
   // Collect the scripts we want in to remain in the header scope.
   $header_scripts = array(
@@ -26,16 +25,15 @@ function center_js_alter(&$javascript) {
 /**
  * Overrides theme_menu_tree().
  */
-
 function center_menu_tree($variables) {
   return '<ul class="nav">' . $variables['tree'] . '</ul>';
 }
 
 /**
- * Custom implementation of theme_menu_link()
+ * Custom implementation of theme_menu_link().
+ *
  * This adds a span for including icons before a menu link.
  */
-
 function center_menu_link__icon(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
@@ -54,7 +52,6 @@ function center_menu_link__icon(array $variables) {
 /**
  * Overrides theme_menu_local_tasks().
  */
-
 function center_menu_local_tasks(&$variables) {
   $output = '';
 
@@ -81,9 +78,9 @@ function center_menu_local_tasks(&$variables) {
 
 /**
  * Overrides theme_links().
+ *
  * This adds classes to the lists to make them more in line with menus.
  */
-
 function center_links($variables) {
   $links = $variables['links'];
   $attributes = $variables['attributes'];
@@ -98,6 +95,7 @@ function center_links($variables) {
     // list of links.
     if (!empty($heading)) {
       if (is_string($heading)) {
+
         // Prepare the array that will be used when the passed heading
         // is a string.
         $heading = array(
@@ -123,7 +121,7 @@ function center_links($variables) {
       $class[] = 'nav-item';
       $link['attributes']['class'][] = 'nav-link';
 
-      // Add first, last and active classes to the list of links to help out themers.
+      // Add first, last and active classes to lists of links to help themers.
       if ($i == 1) {
         $class[] = 'first';
       }
@@ -141,7 +139,9 @@ function center_links($variables) {
         $output .= l($link['title'], $link['href'], $link);
       }
       elseif (!empty($link['title'])) {
-        // Some links are actually not links, but we wrap these in <span> for adding title and class attributes.
+
+        // Some links are actually not links, but we wrap these in <span> for
+        // adding title and class attributes.
         if (empty($link['html'])) {
           $link['title'] = check_plain($link['title']);
         }
@@ -167,10 +167,10 @@ function center_links($variables) {
  */
 
 /**
- * Overrides theme_field()
+ * Overrides theme_field().
+ *
  * Remove the hard coded classes so we can add them in preprocess functions.
  */
-
 function center_field($variables) {
   $output = '';
 
@@ -194,6 +194,7 @@ function center_field($variables) {
 
 /**
  * Overrides theme_ds_field_minimal().
+ *
  * Still allow the normal drupal field classes to apply.
  */
 function center_field__minimal($variables) {
@@ -217,13 +218,14 @@ function center_field__minimal($variables) {
   foreach ($variables['items'] as $delta => $item) {
     $output .= drupal_render($item);
   }
-  $output .="</div>";
+  $output .= "</div>";
 
   return $output;
 }
 
 /**
  * Overrides theme_ds_field_minimal().
+ *
  * Still allow the normal drupal field classes to apply.
  */
 function center_field__raw($variables) {
@@ -238,11 +240,11 @@ function center_field__raw($variables) {
 }
 
 /**
- * Custom implementation of theme_field()
+ * Custom implementation of theme_field().
+ *
  * Turns multivalued fields into a comma separated list.
  * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_separated';
  */
-
 function center_field__custom_separated($variables) {
   $output = '';
 
@@ -252,14 +254,17 @@ function center_field__custom_separated($variables) {
   }
 
   // Render the items.
-  //$output .= '<div ' . $variables['content_attributes'] . '>';
+  // $output .= '<div ' . $variables['content_attributes'] . '>';
   $count = 1;
   foreach ($variables['items'] as $delta => $item) {
     $output .= '<span ' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</span>';
-    if ($count < count($variables['items'])) { $output .= ', '; }
+    if ($count < count($variables['items'])) {
+      $output .= ', ';
+    }
     $count++;
   }
-  //$output .= '</div>';
+
+  // $output .= '</div>';
 
   // Render the top-level DIV.
   $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
@@ -268,11 +273,11 @@ function center_field__custom_separated($variables) {
 }
 
 /**
- * Custom implementation of theme_field()
+ * Custom implementation of theme_field().
+ *
  * Takes a url and renders it as a download link.
  * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_download';
  */
-
 function center_field__custom_download($variables) {
   $output = '';
 
@@ -285,12 +290,12 @@ function center_field__custom_download($variables) {
   $count = 1;
   foreach ($variables['items'] as $delta => $item) {
     $output .= l(
-      'Download',
+      t('Download'),
       $item['#markup'],
       array(
         'attributes' => array(
           'class' => array('download-link'),
-        )
+        ),
       )
     );
   }
@@ -302,11 +307,11 @@ function center_field__custom_download($variables) {
 }
 
 /**
- * Custom implementation of theme_field()
+ * Custom implementation of theme_field().
+ *
  * Wraps the field in an h3 and nukes the label an outer wrapper.
  * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_h2';
  */
-
 function center_field__custom_h2($variables) {
   $output = '';
   foreach ($variables['items'] as $delta => $item) {
@@ -316,11 +321,11 @@ function center_field__custom_h2($variables) {
 }
 
 /**
- * Custom implementation of theme_field()
+ * Custom implementation of theme_field().
+ *
  * Wraps the field in an h3 and nukes the label an outer wrapper.
  * USAGE: $vars['theme_hook_suggestions'][] = 'field__custom_h3';
  */
-
 function center_field__custom_h3($variables) {
   $output = '';
   foreach ($variables['items'] as $delta => $item) {
@@ -341,10 +346,16 @@ function center_field__custom_h3($variables) {
  * BREADCRUMBS
  */
 
+/**
+ * Custom implementation of theme_breadcrumb().
+ *
+ * Add some comments here.
+ */
 function center_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
 
   if (!empty($breadcrumb)) {
+
     // Provide a navigational heading to give context for breadcrumb links to
     // screen-reader users. Make the heading invisible with .element-invisible.
     $output = '<h2 class="element-invisible">' . t('You are here') . '</h2>';
