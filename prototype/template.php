@@ -138,6 +138,6 @@ function prototype_preprocess_block(&$vars) {
 function prototype_form_alter(&$form, &$form_state, $form_id) {
   /* Add placeholder text to a form */
   if ($form_id == 'search_block_form') {
-    $form['search_block_form']['#attributes']['placeholder'] = "Enter a search term…";
+    $form['search_block_form']['#attributes']['placeholder'] = "Enter a term";
   }
 }

@@ -1,8 +1,4 @@
-.clearfix {
-  @include clearfix;
-}
-
-@mixin clearfix() {
+@mixin clearfix {
   *zoom: 1;
   &:before, &:after {
     content: " ";
@@ -11,5 +7,8 @@
   &:after {
     clear: both;
   }
+}
+.clearfix {
+  @include clearfix;
 }
 

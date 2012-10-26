@@ -12,12 +12,13 @@
 <meta http-equiv="cleartype" content="on">
 <title><?php print $head_title; ?></title>
 <?php
-
-if (theme_get_setting('toggle_favicon')) {
-  $favicon = theme_get_setting('favicon');
-} else {
-  $favicon = "/sites/all/themes/center/images/favicon.ico";
-} ?>
+  if (theme_get_setting('toggle_favicon')) {
+    $favicon = theme_get_setting('favicon');
+  }
+  else {
+    $favicon = "/sites/all/themes/center/images/favicon.ico";
+  }
+?>
 <link rel="shortcut icon" type="image/x-icon" href="<?php print $favicon; ?>" />
 <!--[if lt IE 9]><script src="/sites/all/libraries/html5shiv/html5shiv.js"></script><![endif]-->
 <?php print $styles; ?>

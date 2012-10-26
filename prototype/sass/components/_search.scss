@@ -5,49 +5,5 @@
 
 // Search block
 #block-search-form {
-  padding-top: rhythm(1);
-
-  > .block-content {
-    margin-right: $w-gutter;
-
-    @include breakpoint($mobile-wide) {
-      position: relative;
-      right: -12px;
-      margin-right: 0;
-      margin-left: -12px;
-    }
-  }
-
-  label {
-    @include float-left;
-    @include adjust-font-size-to(12px, 2);
-    @include text-shadow($white 0 1px 1px);
-    font-weight: 700;
-    margin: 0 20px 0 0;
-    text-transform: uppercase;
-  }
-
-  .form-text {
-    @include float-left;
-    @include border-left-radius(24px/2);
-    @include adjust-font-size-to(12px, 3);
-    @include box-shadow(rgba($black, 0.1) 0 1px 0 0 inset);
-    @include inline-block;
-    width: 130px;
-    background-color: $white;
-    border: none;
-    color: $gray-dark;
-    padding: 2px 5px 2px 10px;
-  }
-
-  input[type="submit"] {
-    @include float-left;
-    @include border-left-radius(0);
-    @include border-right-radius(24px/2);
-    @include adjust-font-size-to(12px, 3);
-    @include inline-block;
-    padding: 2px 10px;
-    margin: 0 0 0 -1px;
-    border: none;
-  }
+  @include clearfix;
 }

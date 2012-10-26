@@ -1,6 +1,6 @@
 ;-------------- B A S I C   S E T T I N G S -------------
 name = Center
-description = A robust base theme
+description = A robust base theme.
 core = 7.x
 
 ;-------------- F E A T U R E S -------------
