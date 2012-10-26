@@ -12,12 +12,8 @@
 html > body {
   // Override the default line height to allow for smaller baseline heights.
   @include adjust-leading-to(3);
-  color: $primary-color;
+  color: $clr-text;
   font-family: $primary-typeface;
-}
-
-body.html {
-  background-color: $gray-white;
 }
 
 // Headings
@@ -26,13 +22,13 @@ body.html {
 h1 {
   @include adjust-font-size-to($h1-font-size);
   @include rhythm(0, 0, 0, 1, $h1-font-size);
-  color: $accent-color;
+  color: $clr-accent;
 }
 
 h2 {
   @include adjust-font-size-to($h2-font-size, 3);
   @include rhythm(0, 0, 0, 1, $h2-font-size);
-  color: $accent-color;
+  color: $clr-accent;
   font-family: $secondary-typeface;
 }
 
@@ -40,14 +36,14 @@ h3 {
   @include adjust-font-size-to($h3-font-size);
   @include rhythm(2, 0, 0, 2, $h3-font-size);
   font-family: $secondary-typeface;
-  color: $accent-color;
+  color: $clr-accent;
 }
 
 h4 {
   @include adjust-font-size-to($h4-font-size);
   @include rhythm(4, 0, 0, 0, $h4-font-size);
   font-family: $secondary-typeface;
-  color: $accent-color;
+  color: $clr-accent;
 }
 
 h5 {
@@ -67,7 +63,7 @@ h6 {
 //-----------------------------------------------------------------------------
 
 a {
-  @include link-colors($secondary-color, darken($secondary-color, 10%));
+  @include link-colors($clr-link, darken($clr-link, 10%));
   @include hover-link;
 }
 

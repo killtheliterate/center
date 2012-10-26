@@ -40,7 +40,7 @@ $gray-darker:       #424c5e;
 $gray-darkest:      #182643;
 $gray-black:        #181818;
 
-$red:               #b52847;
+$red:               #B52828;
 $red-dark:          #95223C;
 
 $orange-white:      #fdf6e9;
@@ -76,11 +76,16 @@ $royal-darker:       #254590;
 $royal-darkest:      #0f2840;
 $royal-black:        #091827;
 
-$primary-color:     $gray-dark;       // Default body copy color
-$secondary-color:   $blue-darker;     // Default link color
-$accent-color:      $orange-dark;     // Default heading color
-$warning-color:     $red;             // Default error and required color
-$border-color:      $gray-lighter;    // Default error and required color
+// Semantic color variables.
+
+$clr-neutral:       $gray-light;      // Default nuetral color
+$clr-text:          $gray-dark;       // Default body copy color
+$clr-link:          $blue-darker;     // Default link color
+$clr-accent:        $orange-dark;     // Default accent color
+$clr-border:        $gray-lighter;    // Default border and required color
+$clr-status:        $green;           // Default status color
+$clr-warning:       $orange;          // Default warning color
+$clr-error:         $red;             // Default error and required color
 
 
 //  Typography

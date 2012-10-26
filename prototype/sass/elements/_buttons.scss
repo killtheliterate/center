@@ -4,9 +4,9 @@
 // ----------------------------------------------------------------------------
 
 // Primary buttons
-.button-primary {
+.button--primary {
   @extend %button;
   @extend %button-medium;
-  @extend %button-blue;
+  @extend %button--primary;
   margin-bottom: rhythm(1);
 }

@@ -26,7 +26,7 @@ fieldset-legend {
 }
 
 .form-required {
-  color: $red;
+  color: $clr-error;
   font-weight: bold;
 }
 
@@ -61,6 +61,11 @@ input[type="week"] {
   }
 }
 
+input[type="submit"] {
+  @extend %button;
+  @extend %button--primary;
+}
+
 // Views exposed filters
 // ---------------------
 
@@ -89,7 +94,7 @@ input[type="week"] {
 }
 
 .views-submit-button > .form-submit {
-  @extend .button-primary;
+  @extend %button--primary;
 }
 
 .views-submit-button {

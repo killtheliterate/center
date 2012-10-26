@@ -147,15 +147,16 @@
     > a {
       @include adjust-font-size-to(12px);
       padding: rhythm(.5) $w-gutter-half;
-      color: $orange-dark;
+      color: $clr-link;
 
       &:hover {
-        background-color: $orange-white;
+        background-color: blend-overlay($clr-link, rgba($white, 0));
+        background-color: $blue;
       }
 
       &:active,
       &.active {
-        background-color: $orange;
+        background-color: $clr-link;
         color: $white;
       }
     }
