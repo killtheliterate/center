@@ -1,5 +1,10 @@
 <div id="page" class="<?php print $classes; ?>">
 
+  <?php kpr(get_defined_vars()); ?>
+  <?php
+    drupal_set_message('hihihi');
+  ?>
+
   <div id="header">
     <div class="page-width">
       <hgroup id="branding">

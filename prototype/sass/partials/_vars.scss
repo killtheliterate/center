@@ -109,12 +109,12 @@ $fs-xxxl:    24px;
 $fs-xxxxl:   36px;
 $fs-xxxxxl:  50px;
 
-$h1-font-size: $fs-xxxxl !default;
-$h2-font-size: $fs-xxxl !default;
-$h3-font-size: $fs-xl !default;
-$h4-font-size: $fs-m !default;
-$h5-font-size: $fs-s !default;
-$h6-font-size: $fs-xxs !default;
+$fs-h1: $fs-xxxxl !default;
+$fs-h2: $fs-xxxl !default;
+$fs-h3: $fs-xl !default;
+$fs-h4: $fs-m !default;
+$fs-h5: $fs-s !default;
+$fs-h6: $fs-xxs !default;
 
 // The amount lists and blockquotes are indented.
 $indent-amount: 48px !default;

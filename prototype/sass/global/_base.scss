@@ -20,44 +20,43 @@ html > body {
 //-----------------------------------------------------------------------------
 
 h1 {
-  @include adjust-font-size-to($h1-font-size);
-  @include rhythm(0, 0, 0, 1, $h1-font-size);
+  @include adjust-font-size-to($fs-h1);
+  @include rhythm(0, 0, 0, 1, $fs-h1);
   color: $clr-accent;
 }
 
 h2 {
-  @include adjust-font-size-to($h2-font-size, 3);
-  @include rhythm(0, 0, 0, 1, $h2-font-size);
-  color: $clr-accent;
+  @include adjust-font-size-to($fs-h2, 3);
+  @include rhythm(0, 0, 0, 1, $fs-h2);
   font-family: $secondary-typeface;
+  color: $clr-accent;
 }
 
 h3 {
-  @include adjust-font-size-to($h3-font-size);
-  @include rhythm(2, 0, 0, 2, $h3-font-size);
+  @include adjust-font-size-to($fs-h3);
+  @include rhythm(2, 0, 0, 2, $fs-h3);
   font-family: $secondary-typeface;
   color: $clr-accent;
 }
 
 h4 {
-  @include adjust-font-size-to($h4-font-size);
-  @include rhythm(4, 0, 0, 0, $h4-font-size);
+  @include adjust-font-size-to($fs-h4);
+  @include rhythm(4, 0, 0, 0, $fs-h4);
   font-family: $secondary-typeface;
   color: $clr-accent;
 }
 
 h5 {
-  @include adjust-font-size-to($h5-font-size);
-  @include rhythm(4, 0, 0, 0, $h5-font-size);
+  @include adjust-font-size-to($fs-h5);
+  @include rhythm(4, 0, 0, 0, $fs-h5);
 }
 
 h6 {
-  @include adjust-font-size-to($h6-font-size);
-  @include rhythm(4, 0, 0, 0, $h6-font-size);
+  @include adjust-font-size-to($fs-h6);
+  @include rhythm(4, 0, 0, 0, $fs-h6);
   letter-spacing: .03em;
   text-transform: uppercase;
 }
-
 
 // Links
 //-----------------------------------------------------------------------------
