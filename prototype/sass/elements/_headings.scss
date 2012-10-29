@@ -20,7 +20,7 @@
 .block-title {
   @include adjust-font-size-to($fs-l);
   margin-bottom: rhythm(4, $fs-l);
-  color: $gray-dark;
+  color: $clr-text;
   font-family: $primary-typeface;
   text-transform: uppercase;
 }
