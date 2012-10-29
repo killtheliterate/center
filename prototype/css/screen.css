@@ -682,7 +682,7 @@ input[type="week"]:focus {
 
 /* line 72, ../sass/global/_forms.scss */
 .views-exposed-form {
-  background-color: #ecf3f7;
+  background-color: #f0f1f2;
   padding: 0.42857em 12px 0;
 }
 @media (min-width: 992px) {
@@ -1410,16 +1410,15 @@ html[xmlns] .slides {
 }
 /* line 152, ../sass/elements/_navigation.scss */
 .nav-stacked.nav-buttons > li > a:hover {
-  background-color: white;
-  background-color: #4168b6;
+  background-color: #edf1fa;
 }
-/* line 158, ../sass/elements/_navigation.scss */
+/* line 157, ../sass/elements/_navigation.scss */
 .nav-stacked.nav-buttons > li > a:active, .nav-stacked.nav-buttons > li > a.active {
   background-color: #254590;
   color: white;
 }
 
-/* line 169, ../sass/elements/_navigation.scss */
+/* line 168, ../sass/elements/_navigation.scss */
 .nav-inline.nav-buttons {
   *zoom: 1;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3c7cc), color-stop(100%, #68707e));
@@ -1444,17 +1443,17 @@ html[xmlns] .slides {
   clear: both;
 }
 @media (min-width: 768px) {
-  /* line 169, ../sass/elements/_navigation.scss */
+  /* line 168, ../sass/elements/_navigation.scss */
   .nav-inline.nav-buttons {
     display: block;
   }
 }
-/* line 184, ../sass/elements/_navigation.scss */
+/* line 183, ../sass/elements/_navigation.scss */
 .nav-inline.nav-buttons > li {
   float: left;
   margin-right: 0;
 }
-/* line 189, ../sass/elements/_navigation.scss */
+/* line 188, ../sass/elements/_navigation.scss */
 .nav-inline.nav-buttons > li > a {
   text-shadow: 0px 1px 1px rgba(104, 112, 126, 0.6);
   height: 20px;
@@ -1466,12 +1465,12 @@ html[xmlns] .slides {
   font-weight: bold;
 }
 @media (min-width: 992px) {
-  /* line 189, ../sass/elements/_navigation.scss */
+  /* line 188, ../sass/elements/_navigation.scss */
   .nav-inline.nav-buttons > li > a {
     padding: 14px 24px;
   }
 }
-/* line 203, ../sass/elements/_navigation.scss */
+/* line 202, ../sass/elements/_navigation.scss */
 .nav-inline.nav-buttons > li > a:hover {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f0f1f2), color-stop(100%, #e1e3e6));
   background-image: -webkit-linear-gradient(top, #f0f1f2, #e1e3e6);
@@ -1479,7 +1478,7 @@ html[xmlns] .slides {
   background-image: -o-linear-gradient(top, #f0f1f2, #e1e3e6);
   background-image: linear-gradient(top, #f0f1f2, #e1e3e6);
 }
-/* line 209, ../sass/elements/_navigation.scss */
+/* line 208, ../sass/elements/_navigation.scss */
 .nav-inline.nav-buttons > li > a:active, .nav-inline.nav-buttons > li > a.active, .nav-inline.nav-buttons > li > a.active-trail {
   background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #c3c7cc), color-stop(100%, #a5aab2));
   background-image: -webkit-linear-gradient(bottom, #c3c7cc, #a5aab2);
@@ -1490,7 +1489,7 @@ html[xmlns] .slides {
   border-left: #68707e 1px solid;
 }
 
-/* line 217, ../sass/elements/_navigation.scss */
+/* line 216, ../sass/elements/_navigation.scss */
 #tabs {
   margin-bottom: 1.71429em;
 }

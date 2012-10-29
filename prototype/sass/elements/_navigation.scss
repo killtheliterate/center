@@ -150,8 +150,7 @@
       color: $clr-link;
 
       &:hover {
-        background-color: blend-overlay($clr-link, rgba($white, 0));
-        background-color: $blue;
+        background-color: lighten($clr-link, 60%);
       }
 
       &:active,

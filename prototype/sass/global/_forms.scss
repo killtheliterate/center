@@ -70,7 +70,7 @@ input[type="submit"] {
 // ---------------------
 
 .views-exposed-form {
-  background-color: $blue-white;
+  background-color: $gray-white;
   padding: rhythm(1) $w-gutter-half 0;
 
   @include breakpoint($tablet-wide) {
