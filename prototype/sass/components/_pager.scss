@@ -6,8 +6,6 @@
 // Pager ul
 .pager {
   @extend .nav;
-  font-family: $tertiary-typeface;
-  font-weight: bold;
   text-align: center;
   padding-left: 0;
   margin-bottom: rhythm(2);

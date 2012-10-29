@@ -92,10 +92,9 @@ $clr-error:         $red;             // Default error and required color
 //-----------------------------------------------------------------------------
 
 //  Typefaces
-$primary-typeface:    "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
-$secondary-typeface:  "Droid Serif", Georgia, serif;
-$tertiary-typeface:   $secondary-typeface;
-$base-font-family:    $primary-typeface;
+$ff-body:     "Open Sans", "Helvetica Neue", Arial, Helvetica, "Lucida Grande", Verdana, sans-serif;
+$ff-heading:  "Droid Serif", Georgia, serif;
+$ff-display:  $ff-heading;
 
 //  Font sizes
 $fs-xxs:     11px;

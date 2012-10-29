@@ -12,7 +12,7 @@
 .article-title {
   margin: 0 0 rhythm(1, $fs-xl);
   @include adjust-font-size-to($fs-xl, 3);
-  font-family: $secondary-typeface;
+  font-family: $ff-heading;
   font-weight: bold;
 }
 
@@ -21,6 +21,6 @@
   @include adjust-font-size-to($fs-l);
   margin-bottom: rhythm(4, $fs-l);
   color: $clr-text;
-  font-family: $primary-typeface;
+  font-family: $ff-body;
   text-transform: uppercase;
 }

@@ -1591,14 +1591,12 @@ html[xmlns] .slides {
 
 /* line 7, ../sass/components/_pager.scss */
 .pager {
-  font-family: "Droid Serif", Georgia, serif;
-  font-weight: bold;
   text-align: center;
   padding-left: 0;
   margin-bottom: 0.85714em;
 }
 
-/* line 21, ../sass/components/_pager.scss */
+/* line 19, ../sass/components/_pager.scss */
 .pager-first,
 .pager-previous,
 .pager-item,
@@ -1611,7 +1609,7 @@ html[xmlns] .slides {
   zoom: 1;
   *display: inline;
 }
-/* line 24, ../sass/components/_pager.scss */
+/* line 22, ../sass/components/_pager.scss */
 .pager-first > a,
 .pager-previous > a,
 .pager-item > a,
@@ -1629,7 +1627,7 @@ html[xmlns] .slides {
   padding: 2px 8px;
   margin: 0.5em 2px;
 }
-/* line 32, ../sass/components/_pager.scss */
+/* line 30, ../sass/components/_pager.scss */
 .pager-first > a:hover,
 .pager-previous > a:hover,
 .pager-item > a:hover,
@@ -1639,7 +1637,7 @@ html[xmlns] .slides {
   background-color: #68707e;
 }
 
-/* line 39, ../sass/components/_pager.scss */
+/* line 37, ../sass/components/_pager.scss */
 .pager-ellipsis {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1649,7 +1647,7 @@ html[xmlns] .slides {
   *display: inline;
 }
 
-/* line 43, ../sass/components/_pager.scss */
+/* line 41, ../sass/components/_pager.scss */
 .pager-current {
   display: -moz-inline-stack;
   display: inline-block;
