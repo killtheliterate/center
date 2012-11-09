@@ -22,7 +22,8 @@
     font-weight: bold;
   }
 
-  &.error    { background-color: $red; }
-  &.warning  { background-color: $orange; }
-  &.status   { background-color: $green; }
+  // TODO: Rework these to .message--error etc.
+  &.error    { background-color: $clr-error; }
+  &.warning  { background-color: $clr-warning; }
+  &.status   { background-color: $clr-status; }
 }

@@ -26,7 +26,7 @@ fieldset-legend {
 }
 
 .form-required {
-  color: $red;
+  color: $clr-error;
   font-weight: bold;
 }
 
@@ -61,11 +61,16 @@ input[type="week"] {
   }
 }
 
+input[type="submit"] {
+  @extend %button;
+  @extend %button--primary;
+}
+
 // Views exposed filters
 // ---------------------
 
 .views-exposed-form {
-  background-color: $blue-white;
+  background-color: $gray-white;
   padding: rhythm(1) $w-gutter-half 0;
 
   @include breakpoint($tablet-wide) {
@@ -89,7 +94,7 @@ input[type="week"] {
 }
 
 .views-submit-button > .form-submit {
-  @extend .button-primary;
+  @extend %button--primary;
 }
 
 .views-submit-button {

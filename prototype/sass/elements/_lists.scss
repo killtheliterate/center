@@ -6,14 +6,14 @@
 // Article list
 .article-list {
   padding: 0;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $clr-border;
 }
 
 .article-item {
   @include leading-border(1px, 2);
   padding-bottom: rhythm(2);
   display: block;
-  border-color: $border-color;
+  border-color: $clr-border;
 }
 
 // Feature list
