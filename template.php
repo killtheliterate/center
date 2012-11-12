@@ -1,6 +1,14 @@
 <?php
 
 /**
+ * Implements hook_preprocess_html().
+ */
+function center_html_head_alter(&$head_elements) {
+  // Remove system content type meta tag.
+  unset($head_elements['system_meta_content_type']);
+}
+
+/**
  * Implements hook_js_alter().
  */
 function center_js_alter(&$javascript) {

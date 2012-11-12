@@ -10,6 +10,8 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="cleartype" content="on">
+<?php print $head; ?>
+
 <title><?php print $head_title; ?></title>
 <?php
   if (theme_get_setting('toggle_favicon')) {
