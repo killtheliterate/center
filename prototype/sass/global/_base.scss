@@ -11,7 +11,7 @@
 
 html > body {
   // Override the default line height to allow for smaller baseline heights.
-  @include adjust-leading-to(3);
+  @include adjust-leading-to(4);
   color: $clr-text;
   font-family: $ff-body;
 }
@@ -26,7 +26,7 @@ h1 {
 }
 
 h2 {
-  @include adjust-font-size-to($fs-h2, 3);
+  @include adjust-font-size-to($fs-h2);
   @include rhythm(0, 0, 0, 1, $fs-h2);
   font-family: $ff-heading;
   color: $clr-accent;
