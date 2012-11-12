@@ -13,6 +13,8 @@
 <?php print $head; ?>
 
 <title><?php print $head_title; ?></title>
+
+
 <?php
   if (theme_get_setting('toggle_favicon')) {
     $favicon = theme_get_setting('favicon');
@@ -26,6 +28,7 @@
 <?php print $styles; ?>
 
 <?php print $scripts; ?>
+<?php print $head; ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
