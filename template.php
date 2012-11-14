@@ -59,6 +59,19 @@ function center_preprocess_html(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess_page().
+ */
+function center_preprocess_page(&$vars) {
+  $vars['title_attributes_array']['class'][] = 'page-title';
+}
+
+/**
+ * Implements hook_preprocess_node().
+ */
+function center_preprocess_node(&$vars) {
+}
+
+/**
  * Implements hook_html_head_alter().
  */
 function center_html_head_alter(&$head_elements) {
