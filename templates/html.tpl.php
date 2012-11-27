@@ -9,7 +9,6 @@
 
 <title><?php print $head_title; ?></title>
 
-
 <?php
   if (theme_get_setting('toggle_favicon')) {
     $favicon = theme_get_setting('favicon');
@@ -18,12 +17,13 @@
     $favicon = "/sites/all/themes/center/images/favicon.ico";
   }
 ?>
+
 <link rel="shortcut icon" type="image/x-icon" href="<?php print $favicon; ?>" />
 <!--[if lt IE 9]><script src="/sites/all/libraries/html5shiv/html5shiv.js"></script><![endif]-->
 <?php print $styles; ?>
-
 <?php print $scripts; ?>
 <?php print $head; ?>
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
