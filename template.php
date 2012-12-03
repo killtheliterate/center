@@ -90,11 +90,11 @@ function center_js_alter(&$javascript) {
 
   // Change the default scope of all other scripts to footer.
   // We assume if the script is scoped to header it was done so by default.
-  foreach ($javascript as $key => &$script) {
-    if ($script['scope'] == 'header' && !in_array($script['data'], $header_scripts)) {
-      $script['scope'] = 'footer';
-    }
-  }
+  // foreach ($javascript as $key => &$script) {
+  //   if ($script['scope'] == 'header' && !in_array($script['data'], $header_scripts)) {
+  //     $script['scope'] = 'footer';
+  //   }
+  // }
 }
 
 /**
