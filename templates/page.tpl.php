@@ -1,7 +1,7 @@
 <div id="page" class="<?php print $classes; ?>">
 
   <div id="header">
-    <div class="page-width">
+    <div class="l-constrained">
       <hgroup id="branding">
         <h1>
           <?php if ($logo): ?>
@@ -36,13 +36,13 @@
   </div>
 
   <?php if ($page['navigation']): ?>
-    <div id="navigation" class="clearfix"><div class="page-width">
+    <div id="navigation" class="clearfix"><div class="l-constrained">
       <?php print render($page['navigation']); ?>
     </div></div>
   <?php endif; // end navigation?>
 
   <div id="main">
-    <div class="page-width">
+    <div class="l-constrained">
 
       <?php if ($messages): ?>
         <div id="messages">
@@ -82,15 +82,6 @@
             </h1>
           <?php endif; ?>
 
-
-
-
-
-
-
-
-
-
           <?php if ($page['help']): ?>
             <div id="help">
               <?php print render($page['help']); ?>
@@ -126,14 +117,14 @@
   </div>
 
   <div id="footer">
-    <div class="page-width">
+    <div class="l-constrained">
       <?php print render($page['footer']); ?>
     </div>
   </div>
 
   <?php if ($page['admin_footer']): ?>
     <div id="admin-footer">
-      <div class="page-width">
+      <div class="l-constrained">
         <?php print render($page['admin_footer']); ?>
       </div>
     </div>

@@ -38,5 +38,6 @@ stylesheets[all][] = css/override/kill/field_collection.theme.css
 stylesheets[all][] = css/override/keep/system.base.css
 stylesheets[all][] = css/override/keep/system.theme.css
 stylesheets[all][] = css/override/keep/search.css
+stylesheets[all][] = css/override/keep/vertical-tabs.css
 
 ;-------------- J S -------------
