@@ -46,7 +46,7 @@ function center_preprocess_html(&$variables) {
       'content' => 'width=device-width',
     ),
   );
-  drupal_add_html_head($meta_handheld_friendly, 'meta_handheld_friendly');
+  drupal_add_html_head($meta_viewport, 'meta_viewport');
 
   $meta_cleartype = array(
     '#tag' => 'meta',
