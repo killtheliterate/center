@@ -10,9 +10,7 @@
             </a>
           <?php endif; ?>
           <?php if ($site_name): ?>
-            <a href="<?php print $front_page; ?>" rel="home" id="site-name">
-             <?php print $site_name; ?>
-            </a>
+            <a href="<?php print $front_page; ?>" rel="home" id="site-name"><?php print $site_name; ?></a>
           <?php endif; ?>
         </h1>
 
