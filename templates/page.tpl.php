@@ -10,9 +10,7 @@
             </a>
           <?php endif; ?>
           <?php if ($site_name): ?>
-            <a href="<?php print $front_page; ?>" rel="home" id="site-name">
-             <?php print $site_name; ?>
-            </a>
+            <a href="<?php print $front_page; ?>" rel="home" id="site-name"><?php print $site_name; ?></a>
           <?php endif; ?>
         </h1>
 
@@ -24,7 +22,7 @@
       </hgroup>
       <?php if ($page['utility']): ?>
         <div id="utility">
-          <div class="container">
+          <div class="l-constrained">
             <?php print render($page['utility']); ?>
           </div>
         </div>
@@ -52,7 +50,7 @@
 
       <?php if ($page['above_content']): ?>
         <div id="above-content">
-          <div class="container">
+          <div class="l-constrained">
             <?php print render($page['above_content']); ?>
           </div>
         </div>
@@ -70,7 +68,7 @@
 
           <?php if ($page['highlighted']): ?>
             <div id="highlighted">
-              <div class="container">
+              <div class="l-constrained">
                 <?php print render($page['highlighted']); ?>
               </div>
             </div>
@@ -107,7 +105,7 @@
 
       <?php if ($page['below_content']): ?>
         <div id="below-content">
-          <div class="container">
+          <div class="l-constrained">
             <?php print render($page['below_content']); ?>
           </div>
         </div>

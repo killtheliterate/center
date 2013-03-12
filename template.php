@@ -106,6 +106,7 @@ function center_preprocess_html(&$variables) {
  */
 function center_form_element($variables) {
   $element = &$variables['element'];
+
   // This is also used in the installer, pre-database setup.
   $t = get_t();
 
@@ -119,6 +120,7 @@ function center_form_element($variables) {
   if (isset($element['#markup']) && !empty($element['#id'])) {
     $attributes['id'] = $element['#id'];
   }
+
   // Add element's #type and #name as class to aid with JS/CSS selectors.
   $attributes['class'] = array('form-item');
   if (!empty($element['#type'])) {
@@ -127,6 +129,7 @@ function center_form_element($variables) {
   if (!empty($element['#name'])) {
     $attributes['class'][] = 'form-item-' . strtr($element['#name'], array(' ' => '-', '_' => '-', '[' => '-', ']' => ''));
   }
+
   // Add a class for disabled elements to facilitate cross-browser styling.
   if (!empty($element['#attributes']['disabled'])) {
     $attributes['class'][] = 'form-disabled';
@@ -154,6 +157,7 @@ function center_form_element($variables) {
 
     case 'none':
     case 'attribute':
+
       // Output no label and no required marker, only the children.
       $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
       break;
@@ -193,6 +197,7 @@ function center_form_element($variables) {
  */
 function center_form_element_label($variables) {
   $element = $variables['element'];
+
   // This is also used in the installer, pre-database setup.
   $t = get_t();
 
@@ -209,10 +214,12 @@ function center_form_element_label($variables) {
   $attributes = array(
     'class' => array('form-item-label'),
   );
+
   // Style the label as class option to display inline with the element.
   if ($element['#title_display'] == 'after') {
     $attributes['class'][] = 'option';
   }
+
   // Show label only to screen readers to avoid disruption in visual flows.
   elseif ($element['#title_display'] == 'invisible') {
     $attributes['class'][] = 'element-invisible';
@@ -267,10 +274,6 @@ function center_js_alter(&$javascript) {
 }
 
 /**
- * MENUS
- */
-
-/**
  * Overrides theme_menu_tree().
  */
 function center_menu_tree($variables) {
@@ -321,10 +324,6 @@ function center_menu_local_tasks(&$variables) {
 }
 
 /**
- * LINKS
- */
-
-/**
  * Overrides theme_links().
  *
  * This adds classes to the lists to make them more in line with menus.
@@ -348,6 +347,7 @@ function center_links($variables) {
         // is a string.
         $heading = array(
           'text' => $heading,
+
           // Set the default level of the heading.
           'level' => 'h2',
         );
@@ -383,6 +383,7 @@ function center_links($variables) {
       $output .= '<li' . drupal_attributes(array('class' => $class)) . '>';
 
       if (isset($link['href'])) {
+
         // Pass in $link as $options, they share the same keys.
         $output .= l($link['title'], $link['href'], $link);
       }
@@ -409,10 +410,6 @@ function center_links($variables) {
 
   return $output;
 }
-
-/**
- * FIELDS
- */
 
 /**
  * Overrides theme_field().
@@ -581,18 +578,6 @@ function center_field__custom_h3($variables) {
   }
   return $output;
 }
-
-/**
- * NODES
- */
-
-/**
- * BLOCKS
- */
-
-/**
- * BREADCRUMBS
- */
 
 /**
  * Custom implementation of theme_breadcrumb().
