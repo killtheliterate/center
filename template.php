@@ -43,7 +43,7 @@ function center_preprocess_html(&$variables) {
     '#tag' => 'meta',
     '#attributes' => array(
       'name' => 'viewport',
-      'content' => 'width=device-width',
+      'content' => 'width=device-width, initial-scale=1',
     ),
   );
   drupal_add_html_head($meta_viewport, 'meta_viewport');
