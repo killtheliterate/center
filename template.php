@@ -533,13 +533,13 @@ function center_field__custom_download($variables) {
 
   // Render the items.
   $count = 1;
-  foreach ($variables['items'] as $delta => $item) {
+  foreach ($variables['element']['#items'] as $delta => $item) {
     $output .= l(
       t('Download'),
-      $item['#markup'],
+      file_create_url($item['uri']),
       array(
         'attributes' => array(
-          'class' => array('download-link'),
+          'class' => array('link--download'),
         ),
       )
     );
