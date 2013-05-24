@@ -1,42 +1,32 @@
 <div id="page" class="<?php print $classes; ?>">
 
-  <div id="header">
+  <header id="header">
     <div class="l-constrained">
-      <hgroup id="branding">
-        <h1>
-          <?php if ($logo): ?>
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-            </a>
-          <?php endif; ?>
-          <?php if ($site_name): ?>
-            <a href="<?php print $front_page; ?>" rel="home" id="site-name"><?php print $site_name; ?></a>
-          <?php endif; ?>
-        </h1>
-
+      <div id="branding">
+        <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><?php if ($logo): ?><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /><?php elseif ($site_name): ?><?php print $site_name; ?><?php endif; ?></a></h1>
         <?php if ($site_slogan): ?>
           <h2 id="site-slogan">
            <?php print $site_slogan; ?>
           </h2>
         <?php endif; ?>
-      </hgroup>
+      </div>
       <?php if ($page['utility']): ?>
         <div id="utility">
-          <div class="l-constrained">
-            <?php print render($page['utility']); ?>
-          </div>
+          <?php print render($page['utility']); ?>
         </div>
       <?php endif; // end utility ?>
       <?php if ($page['header']): ?>
           <?php print render($page['header']); ?>
       <?php endif; // end header ?>
     </div>
-  </div>
+  </header>
 
   <?php if ($page['navigation']): ?>
-    <div id="navigation" class="clearfix"><div class="l-constrained">
-      <?php print render($page['navigation']); ?>
-    </div></div>
+    <div id="navigation" class="clearfix">
+      <div class="l-constrained">
+        <?php print render($page['navigation']); ?>
+      </div>
+    </div>
   <?php endif; // end navigation?>
 
   <div id="main">
