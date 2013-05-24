@@ -248,6 +248,33 @@ function center_preprocess_node(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_block()
+ */
+function center_preprocess_block(&$vars) {
+  /* Set shortcut variables. Hooray for less typing! */
+  $block_id = $vars['block']->module . '-' . $vars['block']->delta;
+  $classes = &$vars['classes_array'];
+  $title_classes = &$vars['title_attributes_array']['class'];
+  $content_classes = &$vars['content_attributes_array']['class'];
+  $suggestions = &$vars['theme_hook_suggestions'];
+
+  /* Add global classes to all blocks */
+  $title_classes[] = 'block-title';
+  $content_classes[] = 'block-content';
+
+  /* Uncomment the line below to see variables you can use to target a block */
+  // print $block_id . '<br/>';
+
+  /* Add classes based on the block delta. */
+  switch ($block_id) {
+    /* System Navigation block */
+    case 'system-main':
+      $suggestions[] = 'block__nuked';
+      break;
+  }
+}
+
+/**
  * Implements hook_html_head_alter().
  */
 function center_html_head_alter(&$head_elements) {
