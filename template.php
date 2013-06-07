@@ -1,6 +1,4 @@
 <?php
-
-/**
  * Implements hook_preprocess_html().
  */
 function center_preprocess_html(&$variables) {
@@ -280,24 +278,6 @@ function center_preprocess_block(&$vars) {
 function center_html_head_alter(&$head_elements) {
   // Remove system content type meta tag.
   unset($head_elements['system_meta_content_type']);
-}
-
-/**
- * Implements hook_js_alter().
- */
-function center_js_alter(&$javascript) {
-  // Collect the scripts we want in to remain in the header scope.
-  $header_scripts = array(
-    'sites/all/libraries/modernizr/modernizr.min.js',
-  );
-
-  // Change the default scope of all other scripts to footer.
-  // We assume if the script is scoped to header it was done so by default.
-  // foreach ($javascript as $key => &$script) {
-  //   if ($script['scope'] == 'header' && !in_array($script['data'], $header_scripts)) {
-  //     $script['scope'] = 'footer';
-  //   }
-  // }
 }
 
 /**
