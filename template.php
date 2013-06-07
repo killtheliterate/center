@@ -1,4 +1,5 @@
 <?php
+/**
  * Implements hook_preprocess_html().
  */
 function center_preprocess_html(&$variables) {

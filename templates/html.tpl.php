@@ -15,7 +15,6 @@
     }
   ?>
   <link rel="shortcut icon" type="image/x-icon" href="<?php print $favicon; ?>" />
-  <!--[if lt IE 9]><script src="/sites/all/libraries/html5shiv/html5shiv.js"></script><![endif]-->
   <?php print $styles; ?>
   <?php print $scripts; ?>
 </head>
