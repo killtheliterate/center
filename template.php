@@ -18,3 +18,4 @@ include 'inc/html.inc';
 include 'inc/link.inc';
 include 'inc/menu.inc';
 include 'inc/page.inc';
+include 'inc/pager.inc';
