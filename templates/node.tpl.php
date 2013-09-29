@@ -6,7 +6,8 @@
  */
 
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<?php print $dev_deets; ?>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print $user_picture; ?>
 
@@ -24,7 +25,6 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
-
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
@@ -36,4 +36,4 @@
 
   <?php print render($content['comments']); ?>
 
-</div>
+</article>
