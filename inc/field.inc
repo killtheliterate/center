@@ -25,6 +25,15 @@ function center_preprocess_field(&$vars) {
  */
 function center_field($variables) {
   $output = $variables['dev_deets'];
+
+  // If we're nuking fields, return the rendered fields with no markup.
+  if (theme_get_setting('nuke_fields')) {
+    foreach ($variables['items'] as $delta => $item) {
+      $output .= drupal_render($item);
+    }
+    return $output;
+  }
+
   // Render the label, if it's not hidden.
   if (!$variables['label_hidden']) {
     $output .= '<div ' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';
