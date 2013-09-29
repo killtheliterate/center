@@ -5,13 +5,26 @@
  */
 
 /**
+ * Implements hook_preprocess_field().
+ */
+function center_preprocess_field(&$vars) {
+  // Set shortcut variables. Hooray for less typing!
+  $name = $vars['element']['#field_name'];
+  $bundle = $vars['element']['#bundle'];
+  $mode = $vars['element']['#view_mode'];
+
+  // Create a development print variable.
+  $vars['dev_deets'] = theme_get_setting('dev_mode') ?
+    '<!-- Name: ' . $name . ' | Bundle: ' . $bundle . ' | View Mode: ' . $mode . ' -->' : '';
+}
+
+/**
  * Overrides theme_field().
  *
  * Remove the hard coded classes so we can add them in preprocess functions.
  */
 function center_field($variables) {
-  $output = '';
-
+  $output = $variables['dev_deets'];
   // Render the label, if it's not hidden.
   if (!$variables['label_hidden']) {
     $output .= '<div ' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';
