@@ -20,6 +20,7 @@ include 'inc/menu.inc';
 include 'inc/node.inc';
 include 'inc/page.inc';
 include 'inc/pager.inc';
+include 'inc/taxonomy.inc';
 
 /**
  * Creates a layout class based on the availability of regions in the given array.
