@@ -2,10 +2,15 @@
 
 /**
  * @file
- * Default theme implementation to display a block.
+ * Custom theme implementation to display a block with navbar classes.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_block()
+ * @see template_process()
  */
 
 ?>
+<?php print $dev_deets; ?>
 <div id="<?php print $block_html_id; ?>" class="navbar <?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="navbar-inner">
     <?php print render($title_prefix); ?>

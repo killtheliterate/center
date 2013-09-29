@@ -20,6 +20,10 @@ function center_preprocess_block(&$vars) {
   $title_classes[] = 'block-title';
   $content_classes[] = 'block-content';
 
+  // Create a development print variable.
+  $vars['dev_deets'] = theme_get_setting('dev_mode') ?
+    '<!-- Block ID: ' . $block_id . ' -->' : '';
+
   // Uncomment the lines below to see variables you can use to target a block.
   // This requires http://drupal.org/project/devel to be installed.
   // dpm($block_id, 'Block ID:');
